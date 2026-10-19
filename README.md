@@ -79,7 +79,7 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe tools/verify_candidate.py --candidate work/C06-rebuilt.bin --manifest patches/manual-lens-c06.json --output work/C06-rebuilt-verification.json
 ```
 
-已记录的 C06 本地验收为 **173 项测试通过，0 失败／错误／跳过**；独立整包验证及二次重建一致。覆盖范围和模型边界见 [C06 文档](docs/candidate-C06.md)。
+本次发布全量复核为 **197 项测试通过，0 失败／错误／跳过**，见[发布测试记录](research/generated/release-c06-tests-20261019.json)；此前 C06 的 173 项验收、独立整包验证及二次重建记录仍保留。覆盖范围和模型边界见 [C06 文档](docs/candidate-C06.md)。
 
 ## 项目导航
 

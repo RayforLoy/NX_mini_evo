@@ -1,0 +1,13 @@
+{
+  "tests": "197",
+  "failures": "0",
+  "errors": "0",
+  "skipped": "0",
+  "time": "205.143",
+  "date": "2026-10-19",
+  "scope": "Full pytest suite in original workspace; identical source copied to NX_mini_evo. Documentation updates only after test run.",
+  "junit": "work/release-test-results.xml",
+  "hardware_verified": false,
+  "recovery_verified": false,
+  "flash_ready": false
+}
