@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "firmware_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "experiment": "sizing-only copy of loader into an unproven zero area; no launch hook",
+  "loader_image_sha256": "990a2587ef2df4d6e42c4065ef27edfb29b44c211f656c8c9bf081d7df8778de",
+  "test_decoded_offset": "0x804eb0",
+  "loader_bytes": 2608,
+  "zero_area_runtime_ownership_verified": false,
+  "runs": [
+    {
+      "preserve_tokens": false,
+      "original_compressed_bytes": 5301868,
+      "encoded_bytes": 5304018,
+      "compressed_growth_bytes": 2150,
+      "slot_capacity_bytes": 5302272,
+      "baseline_padding_bytes": 404,
+      "fits_fixed_slot": false,
+      "decoded_roundtrip_verified": true
+    },
+    {
+      "preserve_tokens": true,
+      "original_compressed_bytes": 5301868,
+      "encoded_bytes": 5303967,
+      "compressed_growth_bytes": 2099,
+      "slot_capacity_bytes": 5302272,
+      "baseline_padding_bytes": 404,
+      "fits_fixed_slot": false,
+      "decoded_roundtrip_verified": true
+    }
+  ],
+  "firmware_binary_written": false,
+  "camera_modified": false,
+  "flash_ready": false
+}

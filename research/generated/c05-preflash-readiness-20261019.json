@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "prepared_at_local": "2026-10-19T16:50:18.514442+08:00",
+  "user_requested_flash_attempt": true,
+  "candidate": "C05",
+  "candidate_image": {
+    "path": "D:\\NX mini evo\\work\\device-20261019-usb-001\\C05-flash-attempt-20261019\\candidate\\DATANXmini.bin",
+    "bytes": 135010548,
+    "sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+    "copy_readback_verified": true
+  },
+  "official_original": {
+    "path": "D:\\NX mini evo\\work\\device-20261019-usb-001\\C05-flash-attempt-20261019\\official-original\\DATANXmini.bin",
+    "bytes": 135010548,
+    "sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+    "copy_readback_verified": true
+  },
+  "local_verification_report": "D:\\NX mini evo\\work\\device-20261019-usb-001\\c05-preflash-verification-20261019.json",
+  "candidate_internal_version": "01.10",
+  "body_version_reported_by_user": "01.10",
+  "lens_version_reported_by_user": "01.11",
+  "same_version_acceptance_verified": false,
+  "header_version_changed": false,
+  "writer_changed": false,
+  "backup_scope_available": "44 small SD-card/configuration and virtual-CD files; not a camera flash or calibration backup",
+  "complete_flash_backup_available": false,
+  "on_device_recovery_verified": false,
+  "original_user_plan_gate": "刷写前必须确认校验算法、备份范围和实际恢复路径；未满足时继续交付离线分析与候选补丁，不将其标为可刷版本。",
+  "original_user_plan_gate_satisfied": false,
+  "explicit_gate_override_received": false,
+  "camera_connected_at_last_check": true,
+  "last_usb_check_at_local": "2026-10-19T16:51:52.3099420+08:00",
+  "candidate_copied_to_card": true,
+  "flash_started": false,
+  "flash_completed": false,
+  "flash_ready": false,
+  "status": "candidate-card-file-ready-awaiting-physical-camera-confirmation",
+  "recovery_reference": {
+    "url": "https://github.com/ge0rg/samsung-nx-hacks/wiki/NX3000-Hardware-Information",
+    "model_actually_reported": "NX3000",
+    "nxmini_recovery_demonstrated_by_reference": false
+  },
+  "latest_user_decision": "download the service manual into the project folder and begin flashing",
+  "decision_recorded_at_local": "2026-10-19T16:53:21.340130+08:00",
+  "experimental_write_authorized": true,
+  "card_body_file_checked": {
+    "path": "F:\\DATANXmini.bin",
+    "bytes": 135010548,
+    "sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+    "identity": "experimental-C05",
+    "evidence": "exclusive temporary copy, fsync and two complete readbacks"
+  },
+  "nxmini_specific_recovery_document_found": true,
+  "nxmini_recovery_reference": "research/generated/nxmini-recovery-reference-20261019.json",
+  "prior_user_decision": "保留恢复前提，暂不写入",
+  "authorization_basis": "latest explicit user request to begin flashing supersedes the prior no-write hold for this experimental update attempt",
+  "user_explicitly_selected_risk_waiver_option": false,
+  "prior_no_write_hold_superseded_by_latest_start_request": true,
+  "card_preparation_report": "research/generated/c05-card-preparation-20261019.json",
+  "official_card_original_preserved_as": "F:\\NXMINI_OFFICIAL_110_20261019_170045.BAK",
+  "service_manual": {
+    "source_url": "https://nxfiles.nx.tc/files/NXmini/Service-Manual/Samsung%20NX-Mini%20Digital%20Camera%20service%20manual.pdf",
+    "path": "D:\\NX mini evo\\references\\Samsung_NX_mini_Service_Manual.pdf",
+    "bytes": 19521732,
+    "sha256": "526e9bbcead7bf5cadfd503671029578506574599ef4c13951c0a9f8da99d6cc",
+    "pages": 65,
+    "recovery_pdf_pages": [
+      42,
+      43
+    ]
+  },
+  "service_manual_recovery_pages_visually_checked": [
+    42,
+    43
+  ]
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nxmini-evo"
+version = "0.1.0"
+description = "Reproducible Samsung NX mini firmware research and transfer tools"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+analysis = ["capstone==5.0.9", "unicorn==2.1.4"]
+images = ["numpy>=1.26", "Pillow>=10"]
+test = ["pytest>=8"]
+
+[project.scripts]
+nxmini = "nxmini.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nxmini*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["firmware: requires the locally downloaded official firmware"]

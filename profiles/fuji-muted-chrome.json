@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "fuji-inspired-muted-chrome",
+  "name": "富士风格参考：低饱和铬色",
+  "status": "original-authored-experimental-reference",
+  "input_space": "sRGB",
+  "output_space": "sRGB",
+  "matrix_domain": "linear-sRGB",
+  "matrix": [[1.015, -0.01, -0.005], [-0.005, 1.015, -0.01], [0.005, 0.015, 0.98]],
+  "saturation": 0.78,
+  "shadow_tint": [-0.003, 0.002, 0.004],
+  "highlight_tint": [0.008, 0.002, -0.004],
+  "curve": [[0, 0.018], [0.15, 0.125], [0.4, 0.395], [0.7, 0.715], [1, 0.975]],
+  "provenance": "Original approximation; no vendor LUT or calibrated camera matching",
+  "camera_installed": false
+}

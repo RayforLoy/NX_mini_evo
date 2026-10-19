@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "recorded_at_local": "2026-10-19T17:11:46.461315+08:00",
+  "candidate": "C05",
+  "expected_firmware_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+  "evidence_source": "direct user report after prepared C05 update",
+  "firmware_read_back_from_internal_flash": false,
+  "flash_completed_reported_by_user": true,
+  "no_lens_capture_reported_working": true,
+  "no_lens_cold_start_and_repeated_capture_explicitly_tested": false,
+  "smart_auto_metering_verified": false,
+  "selfshot_flash_reported_fixed": false,
+  "selfshot_flash_observation": "flash remains disabled when screen is flipped into selfie state",
+  "selfshot_test_lens_state": "original Samsung NX-M 9mm lens attached, confirmed by user",
+  "selfshot_flash_ui_symptom": "flash setting entry absent from both MENU shooting settings and Fn quick panel in selfie state; confirmed by user",
+  "original_lens_regression_complete": false,
+  "recovery_verified": false,
+  "whole_candidate_hardware_validated": false,
+  "next_investigation": "C06 local candidate addresses separate outer MENU item table, Fn grid placement and independent Fn flash option enumeration; hardware retest pending"
+}

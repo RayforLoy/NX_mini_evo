@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "firmware_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "section": 1,
+  "analysis_mapping": "decoded section 1 loaded at 0x40000000",
+  "runtime_mapping_hardware_verified": false,
+  "full_program_analysis_complete": false,
+  "anchors": [
+    {
+      "id": "updater.file_sum",
+      "address": "0x40091f98",
+      "mode": "Thumb",
+      "evidence": "static control flow",
+      "finding": "sum little-endian u32 words up to file_size - 20 and compare footer word",
+      "confidence": "confirmed-offline",
+      "patch": false
+    },
+    {
+      "id": "updater.code_sum",
+      "addresses": [
+        "0x40093820",
+        "0x40093c04"
+      ],
+      "mode": "Thumb",
+      "evidence": "static control flow",
+      "finding": "sum little-endian u16 words over code_size and require zero",
+      "confidence": "confirmed-offline",
+      "patch": false
+    },
+    {
+      "id": "factory.boot_flags",
+      "address": "0x4022e200",
+      "mode": "ARM",
+      "evidence": "I:/nolens.txt and I:/nolens_card.txt cross references",
+      "finding": "production initialisation sets global flags 0x10000000 and low-three-bit states 1 or 2; ordinary capture effect unproven",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.aperture_count",
+      "address": "0x4016009c",
+      "mode": "ARM",
+      "evidence": "CUiModeASM::getApertureCount / isLensDetached / isKMountAttached format string",
+      "finding": "virtual slots 0x458 and 0x45c gate reported aperture count; not yet the shutter permission gate",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.selfshot_transition",
+      "address": "0x4055c8d8",
+      "mode": "ARM",
+      "evidence": "virtual UI handlers and selfshot state transition",
+      "finding": "entry modifies shared mode flags, byte +0x74 and UI state at 0x419f077c+0x8d0; flash veto not established",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.selfshot_parent",
+      "address": "0x405021b8",
+      "mode": "ARM",
+      "evidence": "mode switch including value 0x2006",
+      "finding": "parent UI mode transition; enumerate callees and flash decisions next",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "af.flash_log",
+      "address": "0x401ff110",
+      "mode": "ARM",
+      "evidence": "CaptureMode / FlashEnable=0 string",
+      "finding": "autofocus routine; the log alone does not identify the selfie flash veto",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "debug.nolens_flag",
+      "address": "0x403f4090",
+      "mode": "ARM",
+      "evidence": "on/off string comparisons and nolens on/off messages",
+      "finding": "sets or clears bit 30 of shared state at 0x419f2424+0xc; distinct from factory nolens.txt flags",
+      "confidence": "confirmed-offline",
+      "patch": false
+    },
+    {
+      "id": "ui.detached_predicate",
+      "address": "0x403f0e98",
+      "mode": "ARM",
+      "evidence": "ARM instructions and candidate app vtable slot 0x458",
+      "finding": "returns bit 4 of shared state +0x28; runtime object/vtable binding still needs verification",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.lens_prefix_type",
+      "address": "0x40448440",
+      "mode": "ARM",
+      "evidence": "candidate vtable slot 0x3f0",
+      "finding": "if not detached, caches 1 for an XM prefix or 2 for XL in returned lens-related data; physical meaning of prefixes unverified",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.lens_capability_predicate",
+      "address": "0x406d4324",
+      "mode": "ARM",
+      "evidence": "candidate vtable slot 0x4b8 and consumers 0x40347fe8 / 0x40348e9c",
+      "finding": "true when type query equals 1 or debug nolens bit 30 is set; consumers also depend on setting selectors 9/10/0x18 and mode conditions, not yet identified as the shutter gate",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "production.capture_command",
+      "address": "0x4017e7e4",
+      "mode": "ARM",
+      "evidence": "PM_CAPTURE_STILL / pm_image_capture_cmd log and caller 0x4018121c",
+      "finding": "also sets debug nolens bit before a command-driven capture flow; not proof of normal Smart Auto support",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.eeprom_selector",
+      "address": "0x403eea24",
+      "mode": "ARM",
+      "evidence": "inline branch table, section-4 id/name pairs, bounded ARM execution",
+      "finding": "selector 9=drive, 10=flash, 0x12=AF, 0x18=dynamic range; selfshot 0x2006 maps drive to 0x159 and flash to 0x161",
+      "confidence": "confirmed-offline-with-modelled-RAM",
+      "patch": false
+    },
+    {
+      "id": "ui.effective_flash_mode",
+      "address": "0x40347fe8",
+      "mode": "ARM",
+      "evidence": "native EEPROM selector binding and bounded original ARM execution",
+      "finding": "uses flash setting and guards involving drive value 3, dynamic range value 2 and lens qualification; no unconditional selfshot veto in tested input states",
+      "confidence": "confirmed-offline-with-modelled-dependencies",
+      "patch": false
+    },
+    {
+      "id": "lens.event_state",
+      "address": "0x40267f60",
+      "mode": "ARM",
+      "evidence": "event 5 branch and lens detached log",
+      "finding": "event 5 sets shared state +0x28 bit4, consumed by detached predicate; physical event timing not captured",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.full_press_S2",
+      "address": "0x4014daf0",
+      "mode": "ARM",
+      "evidence": "onEventKeyS2 / S2 KEY PRESSED strings, actual ARM branches and bounded execution",
+      "finding": "detached lens branches at 0x4014dcc8 to cancellation and manager event 2; C01 executes original mode readiness and reaches startS2Mode 0x4014eb60 under explicit modelled RAM/camera-status inputs",
+      "confidence": "confirmed-offline-with-modelled-camera-status",
+      "patch": true,
+      "manifest": "patches/manual-lens-c01.json"
+    },
+    {
+      "id": "ui.lens_event_interception",
+      "address": "0x406c7b00",
+      "mode": "ARM",
+      "evidence": "CUiAppLibManager vtable +0x10 and bounded ARM execution",
+      "finding": "events 2 and 6 use detached and nolens flag; C01 selects original nolens-enabled subpaths without changing detached state",
+      "confidence": "confirmed-offline-with-modelled-RAM",
+      "patch": true
+    },
+    {
+      "id": "ui.menu_library",
+      "address": "0x40780074",
+      "mode": "ARM-vtable",
+      "evidence": "constructor 0x4053a47c and RTTI CMenuLib",
+      "finding": "global 0x4099131c, slot +0x20 effective setting getter, +0x24 per-value availability; flash selector 10 reaches 0x40347fe8 / 0x40348e9c",
+      "confidence": "static-inference",
+      "patch": false
+    },
+    {
+      "id": "ui.mode_s2_vtables",
+      "addresses": [
+        "0x40770f10",
+        "0x4076abd4",
+        "0x4077452c",
+        "0x407728d4"
+      ],
+      "mode": "ARM-vtable",
+      "evidence": "RTTI Program/ASM/SmartAuto/SelfShot; original +0x38 readiness, +0xe8 S2 callback; startS2Mode name literal 0x4014ee18 -> 0x40739571",
+      "finding": "all four bind readiness to 0x4027bde0 and startS2Mode to 0x4014eb60; manager +0x188 at 0x4044463c is doHalfShutterCancel. Neither is proof of physical capture.",
+      "confidence": "static-binding-and-bounded-native-readiness",
+      "patch": false
+    },
+    {
+      "id": "ui.c02_readiness_guard",
+      "address": "0x4027be18",
+      "mode": "ARM",
+      "evidence": "original native readiness 0x4027bde0, C01/C02 controlled execution counterexample",
+      "finding": "when shared +4 bit 0x400000 is set, C01 cancels detached lens before S2; C02 removes this detached branch and retains subsequent 0x464 independent fault check",
+      "confidence": "confirmed-offline-with-modelled-status",
+      "patch": true,
+      "manifest": "patches/manual-lens-c02.json"
+    },
+    {
+      "id": "ui.photo_dispatch",
+      "address": "0x4014f51c",
+      "mode": "ARM",
+      "evidence": "SmartAuto vtable +0xf0; name reference instruction 0x4014f954 -> pool 0x4014fa18 -> string 0x407395b6",
+      "finding": "doPhotoCapture entry; C02 bounded SmartAuto flow executes original readiness/startS2Mode/timer selection and stops here; Program/ASM/SelfShot stop at their mode-specific wrappers",
+      "confidence": "static-name-and-bounded-native-routing",
+      "patch": false
+    }
+  ]
+}

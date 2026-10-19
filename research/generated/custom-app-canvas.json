@@ -1,0 +1,28 @@
+{
+  "firmware_section_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+  "evidence": "original-canvas-instructions-in-model-CPU-RAM-with-modelled-mutex",
+  "rtti_name": "14CGuiCanvasImpl",
+  "vtable": "0x4076fef0",
+  "initialization": "0x406a07e8",
+  "clear_nonzero_color": "0x406a0854",
+  "fill_rectangle": "0x406a09e8",
+  "model_dimensions": [
+    8,
+    6
+  ],
+  "metadata": {
+    "width_offset": "0x4",
+    "height_offset": "0x8",
+    "stride_bytes_offset": "0xc",
+    "buffer_size_offset": "0x10",
+    "buffer_pointer_offset": "0x14"
+  },
+  "cpu_pixel_store_bits": 32,
+  "raw_word_roundtrip_verified": true,
+  "rectangle_geometry_and_guards_verified": true,
+  "native_color_channel_order_verified": false,
+  "native_alpha_semantics_verified": false,
+  "real_display_presented": false,
+  "buffer_ownership_verified": false,
+  "hardware_verified": false
+}

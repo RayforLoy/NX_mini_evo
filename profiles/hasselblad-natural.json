@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "hasselblad-inspired-natural",
+  "name": "哈苏风格参考：自然色彩",
+  "status": "original-authored-experimental-reference",
+  "input_space": "sRGB",
+  "output_space": "sRGB",
+  "matrix_domain": "linear-sRGB",
+  "matrix": [[1.01, -0.006, -0.004], [0, 1.005, -0.005], [-0.003, 0.008, 0.995]],
+  "saturation": 0.98,
+  "shadow_tint": [0, 0, 0],
+  "highlight_tint": [0.004, 0.002, 0],
+  "curve": [[0, 0], [0.15, 0.155], [0.4, 0.405], [0.7, 0.71], [1, 0.985]],
+  "provenance": "Original approximation; not Hasselblad HNCS or a recovered Phocus transform",
+  "camera_installed": false
+}

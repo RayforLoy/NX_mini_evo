@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "leica-inspired-monochrome",
+  "name": "徕卡风格参考：高反差黑白",
+  "status": "original-authored-experimental-reference",
+  "input_space": "sRGB",
+  "output_space": "sRGB",
+  "matrix_domain": "linear-sRGB",
+  "matrix": [[0.25, 0.65, 0.1], [0.25, 0.65, 0.1], [0.25, 0.65, 0.1]],
+  "saturation": 0,
+  "curve": [[0, 0], [0.15, 0.085], [0.4, 0.39], [0.7, 0.76], [1, 1]],
+  "provenance": "Original approximation; no vendor LUT or calibrated camera matching",
+  "camera_installed": false
+}

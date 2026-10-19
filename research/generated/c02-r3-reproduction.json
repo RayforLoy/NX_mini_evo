@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-17T18:04:13.040993+00:00",
+  "status": "published-bundle-source-reproduced-in-fresh-directory",
+  "archive": "dist/nxmini-evo-C02-offline-candidate-r3.zip",
+  "archive_sha256": "f1332e4fb6fe7159c2a456984be631aaaf008f18ec647d1d119d5a4e2c588362",
+  "archive_file_hashes_verified": 81,
+  "fresh_directory": "work/reproduce-C02-r3",
+  "imported_source_is_fresh_bundle": true,
+  "python_dependency_environment_reused": true,
+  "clean_dependency_install_tested": false,
+  "official_original_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "rebuilt_candidate_sha256": "96301d75c5cf3d7e1218d2897665b8530caeceb6f3be0033f691cd46003908fd",
+  "matches_bundled_image": true,
+  "sections_independently_verified": 7,
+  "resources_unchanged": 163,
+  "writer_unchanged": true,
+  "unaccounted_container_changes": [],
+  "native_s2_cases": 24,
+  "flash_parameter_cases": 32,
+  "existing_flash_guard_cases": 3,
+  "ae_mode_mapping_cases": 6,
+  "commands": [
+    "python -m nxmini extract data/firmware/DATANXmini.bin work/nxmini-1.10-verified",
+    "python -m nxmini patch data/firmware/DATANXmini.bin patches/manual-lens-c02.json work/rebuilt-C02.bin",
+    "python tools/verify_candidate.py --candidate work/rebuilt-C02.bin --manifest patches/manual-lens-c02.json --output work/rebuilt-C02-verification.json",
+    "python tools/probe_flash.py --output work/flash-parameter-reproduction.json"
+  ],
+  "hardware_verified": false,
+  "recovery_verified": false,
+  "flash_ready": false,
+  "selfie_flash_fixed": false
+}

@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "candidate": "C01",
+  "status": "offline-candidate-verified",
+  "recorded_at_utc": "2026-10-17T17:10:15.705947+00:00",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "output_sha256": "70e65194c5130e365bcd110866532d4dc7954a50641867265263cea0d222a5f3",
+  "bytes": 135010548,
+  "operations": [
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 1367240,
+      "before": "1800001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4014dcc8",
+      "instruction_before": "bne 0x4014dd30",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens S2 interception branch. The following independent 0x464 lens-fault query still executes."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110376,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7ee8",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 2 without changing the global physical lens state."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110608,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7fd0",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 6 used at capture completion."
+    }
+  ],
+  "sections": [
+    {
+      "section": 1,
+      "decoded_bytes": 10832872,
+      "original_encoded_bytes": 5301868,
+      "candidate_encoded_bytes": 5301875,
+      "original_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+      "candidate_sha256": "52c30134a0eac0802d336572dbfc366d407e9731abbf539a99c45bbedc876866",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 2,
+      "decoded_bytes": 3080624,
+      "original_encoded_bytes": 1726853,
+      "candidate_encoded_bytes": 1726853,
+      "original_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "candidate_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 3,
+      "decoded_bytes": 12,
+      "original_encoded_bytes": 16,
+      "candidate_encoded_bytes": 16,
+      "original_sha256": "2b2bce505a89a32f70df4b90fb6af63b699999c0a6605aeda0631410837d5892",
+      "candidate_sha256": "2b2bce505a89a32f70df4b90fb6af63b699999c0a6605aeda0631410837d5892",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 4,
+      "decoded_bytes": 762496,
+      "original_encoded_bytes": 400660,
+      "candidate_encoded_bytes": 400660,
+      "original_sha256": "cf1995cba1794a98fe3c0a40d30a7a5faa38116274dd4b580960fe84b69b683d",
+      "candidate_sha256": "cf1995cba1794a98fe3c0a40d30a7a5faa38116274dd4b580960fe84b69b683d",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 5,
+      "decoded_bytes": 6759356,
+      "original_encoded_bytes": 4098518,
+      "candidate_encoded_bytes": 4098518,
+      "original_sha256": "e5bd0f3cb59317eef1835303b0a8fd7dd22df22565c44784fb370e44fe5e7bde",
+      "candidate_sha256": "e5bd0f3cb59317eef1835303b0a8fd7dd22df22565c44784fb370e44fe5e7bde",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 6,
+      "decoded_bytes": 12,
+      "original_encoded_bytes": 16,
+      "candidate_encoded_bytes": 16,
+      "original_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "candidate_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "exactly_matches_manifest": true
+    },
+    {
+      "section": 7,
+      "decoded_bytes": 12,
+      "original_encoded_bytes": 16,
+      "candidate_encoded_bytes": 16,
+      "original_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "candidate_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "exactly_matches_manifest": true
+    }
+  ],
+  "all_resources_unchanged": 163,
+  "writer_unchanged": true,
+  "unaccounted_container_changes": false,
+  "checksums": {
+    "code": {
+      "algorithm": "sum-le16-zero",
+      "offset": 327680,
+      "size": 11529746,
+      "stored": 14920,
+      "sum": 0,
+      "valid": true
+    },
+    "file": {
+      "algorithm": "sum-le32",
+      "offset": 0,
+      "size": 135010528,
+      "stored": 749413518,
+      "calculated": 749413518,
+      "valid": true
+    },
+    "footer_size": {
+      "stored": 135010528,
+      "expected": 135010528,
+      "valid": true
+    },
+    "footer_uninterpreted": "fc0000000000000000000000"
+  },
+  "s2_routes": [
+    {
+      "mode": "0x2002",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4015bfd8",
+        "boundary": "lens-electronics-query",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4015bfd8",
+        "boundary": "lens-electronics-query",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x2002",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x2003",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x2003",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200b",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200b",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200c",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200c",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200d",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x200d",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x2006",
+      "detached": false,
+      "original": {
+        "result": null,
+        "stopped_at": "0x4015bfd8",
+        "boundary": "lens-electronics-query",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4015bfd8",
+        "boundary": "lens-electronics-query",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "mode": "0x2006",
+      "detached": true,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7b00",
+        "boundary": "lens-event-interception",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-mode-cancel",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": null,
+        "stopped_at": "0x4014eb60",
+        "boundary": "mode-start-s2",
+        "dependencies": [
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e76f0",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x403e6f80",
+            "value": 0
+          },
+          {
+            "kind": "modelled-log-or-ui-cleanup",
+            "address": "0x4023a670",
+            "value": 0
+          },
+          {
+            "kind": "modelled-timer-state",
+            "value": 0
+          },
+          {
+            "kind": "modelled-camera-slot-0x34",
+            "value": 0
+          }
+        ],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    }
+  ],
+  "detached_events": [
+    {
+      "event": 2,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c7f34",
+        "boundary": "detached-event-2-popup-path",
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "original_nolens_on": {
+        "result": 0,
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": 0,
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    },
+    {
+      "event": 6,
+      "original": {
+        "result": null,
+        "stopped_at": "0x406c8008",
+        "boundary": "detached-event-6-popup-path",
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "original_nolens_on": {
+        "result": 0,
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "candidate": {
+        "result": 0,
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      }
+    }
+  ],
+  "callback_evidence": {
+    "entry": "0x4014eb60",
+    "name": "startS2Mode",
+    "name_pointer_literal": "0x4014ee18",
+    "name_address": "0x40739571",
+    "mode_vtables": [
+      "0x40770f10",
+      "0x4076abd4",
+      "0x4077452c",
+      "0x407728d4"
+    ]
+  },
+  "probe_ram": {
+    "core_plus_4": "0x80000",
+    "core_plus_8_before_s2": "0xc",
+    "core_plus_0x330": 1,
+    "app_state": 0
+  },
+  "mode_readiness": "Original 0x4027bde0 executes via original Program/ASM/SmartAuto/SelfShot vtables; camera slot 0x34 and timer state modelled as zero.",
+  "probe_limits": "Synthetic settled RAM; logging, UI cleanup and mode cancellation modelled. Stops before original startS2Mode at 0x4014eb60 (name pointer 0x4014ee18 -> 0x40739571); not a physical capture API. 0x4044463c is half-shutter cancellation. No REALOS/AE/ISP/flash emulation.",
+  "hardware_verified": false,
+  "recovery_verified": false,
+  "flash_ready": false,
+  "no_contact_short_capture_fixed_on_camera": false,
+  "smart_auto_exposure_verified": false,
+  "selfshot_flash_fixed": false
+}

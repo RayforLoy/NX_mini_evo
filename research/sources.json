@@ -1,0 +1,78 @@
+{
+  "retrieved": "2026-10-17",
+  "sources": [
+    {
+      "repository": "ge0rg/samsung-nx-hacks",
+      "branch": "master",
+      "commit": "c4587838970a5d5bed4ed373b8b71cde122b6997",
+      "url": "https://github.com/ge0rg/samsung-nx-hacks",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "warwickh/pc-autobackup",
+      "branch": "master",
+      "commit": "3543e8fe3650210130bdce6918aa2941a9f05234",
+      "url": "https://github.com/warwickh/pc-autobackup",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "ge0rg/samsung-nx-emailservice",
+      "branch": "master",
+      "commit": "aea57342453efdbfe5e49957c4a58869576f4c66",
+      "url": "https://github.com/ge0rg/samsung-nx-emailservice",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "reticulatedpines/magiclantern_simplified",
+      "branch": "dev",
+      "commit": "142472e95054d73640f50789ac0fd66325499d82",
+      "url": "https://github.com/reticulatedpines/magiclantern_simplified",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "ma1co/OpenMemories-Tweak",
+      "branch": "master",
+      "commit": "d1acfe8dba7e8cfb1d6faf69549adfbf090dca09",
+      "url": "https://github.com/ma1co/OpenMemories-Tweak",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "simeonpilgrim/nikon-firmware-tools",
+      "branch": "main",
+      "commit": "de8019ee30db7fe7bc61e520da289078ae82dcaa",
+      "url": "https://github.com/simeonpilgrim/nikon-firmware-tools",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "bonyback1/sony-pmca-ricoh-mod",
+      "branch": "main",
+      "commit": "5f5c7ce9e1d4b02c48aba9310e1278e7716611ab",
+      "url": "https://github.com/bonyback1/sony-pmca-ricoh-mod",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "shenmintao/V-Log-Alchemy",
+      "branch": "main",
+      "commit": "e51ba9a23458ff5c316f630b860eb0201139d126",
+      "url": "https://github.com/shenmintao/V-Log-Alchemy",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "pelrun/CHDK",
+      "branch": "master",
+      "commit": "54618388e9d4748b26d742878787307c341e4e31",
+      "url": "https://github.com/pelrun/CHDK",
+      "retrieved": "2026-10-18",
+      "purpose": "research-reference; no upstream source code vendored"
+    },
+    {
+      "repository": "FlashAirDevelopers/LuaTutorial",
+      "branch": "master",
+      "commit": "cb2bfb62a78cc23474b8d7627cc61f9d4453a617",
+      "url": "https://github.com/FlashAirDevelopers/LuaTutorial",
+      "retrieved": "2026-10-18",
+      "purpose": "research-reference; no upstream source code vendored"
+    }
+  ],
+  "last_updated": "2026-10-18"
+}

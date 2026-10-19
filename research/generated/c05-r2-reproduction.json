@@ -1,0 +1,21 @@
+{
+  "candidate": "C05",
+  "bundle_revision": "r2",
+  "archive": "dist/nxmini-evo-C05-offline-candidate-r2.zip",
+  "archive_sha256": "40610917e24c6fdce3e959b26f923e8eed6c089833f1654ec5ce9cd8d2190ee3",
+  "archive_files_verified": 95,
+  "fresh_source_import_verified": true,
+  "reused_project_venv": true,
+  "fresh_dependency_install": false,
+  "official_original_copied_from_verified_local_file": true,
+  "bundled_image_matches_C05": true,
+  "output_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+  "sections_verified": 7,
+  "resources_unchanged": 163,
+  "lens_startup_mode_cases": 6,
+  "modelled_no_lens_class": 0,
+  "queue_delivery_executed": false,
+  "complete_cold_boot_emulated": false,
+  "hardware_verified": false,
+  "flash_ready": false
+}

@@ -1,0 +1,32 @@
+services:
+  nxmini-receiver:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    network_mode: host
+    user: "${NAS_UID:?Set NAS_UID}:${NAS_GID:?Set NAS_GID}"
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - "${PHOTO_DIR:?Set PHOTO_DIR}:/photos"
+      - "${STATE_DIR:?Set STATE_DIR}:/state"
+    command:
+      - --host
+      - 0.0.0.0
+      - --advertise-ip
+      - "${NAS_IP:?Set NAS_IP}"
+      - --camera-ip
+      - "${CAMERA_IP:?Set CAMERA_IP}"
+      - --output
+      - /photos
+      - --state
+      - /state
+      - --ssdp
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:52235/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "official_firmware_version": "01.10",
+  "firmware_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "evidence_type": "static-identification-strings-in-decoded-official-firmware",
+  "records": [
+    {
+      "decoded_file": "chunk-01.bin",
+      "decoded_file_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+      "marker": "REALOS/ARM",
+      "offset": "0x33b518",
+      "occurrences_in_file": 2,
+      "context": "SOFTUNE REALOS/ARM is REALtime OS for ARM.COPYRIGHT(C) FUJITSU SEMICONDUCTOR LIMITED 1999"
+    },
+    {
+      "decoded_file": "chunk-01.bin",
+      "decoded_file_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+      "marker": "REALOS/ARM",
+      "offset": "0xa2b338",
+      "occurrences_in_file": 2,
+      "context": "SOFTUNE REALOS/ARM is REALtime OS for ARM.COPYRIGHT(C) FUJITSU SEMICONDUCTOR LIMITED 1999"
+    },
+    {
+      "decoded_file": "chunk-01.bin",
+      "decoded_file_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+      "marker": "ITRON",
+      "offset": "0x2a5990",
+      "occurrences_in_file": 1,
+      "context": "REAL OS/ITRON4"
+    },
+    {
+      "decoded_file": "chunk-02.bin",
+      "decoded_file_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "marker": "PrCONNECT",
+      "offset": "0x1ef04c",
+      "occurrences_in_file": 63,
+      "context": "D:/SW4/wj.c/PrCONNECT_Pro/source/prconnect_pro/prconnect_pro/dnsclnt/irs/getaddrinfo.c"
+    },
+    {
+      "decoded_file": "chunk-02.bin",
+      "decoded_file_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "marker": "PrCONNECT",
+      "offset": "0x279630",
+      "occurrences_in_file": 63,
+      "context": "D:/SW4/wj.c/PrCONNECT_Pro/source/prconnect_pro/prconnect_pro/sslclnt/sslclnt.c"
+    },
+    {
+      "decoded_file": "chunk-02.bin",
+      "decoded_file_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "marker": "PrCONNECT",
+      "offset": "0x279680",
+      "occurrences_in_file": 63,
+      "context": "D:/SW4/wj.c/PrCONNECT_Pro/source/prconnect_pro/prconnect_pro/ssl/ssl_lib.c"
+    },
+    {
+      "decoded_file": "chunk-05.bin",
+      "decoded_file_sha256": "e5bd0f3cb59317eef1835303b0a8fd7dd22df22565c44784fb370e44fe5e7bde",
+      "marker": "ITRON",
+      "offset": "0x63b4fd",
+      "occurrences_in_file": 1,
+      "context": "MYRIAD_ALLOW_ITRON_OPTION"
+    }
+  ],
+  "conclusion": "REALOS/ARM RTOS identification with ITRON and PrCONNECT middleware markers; strings alone do not identify exact kernel version, complete task API, dynamic loader, or chip model.",
+  "arbitrary_sd_program_loader_verified": false,
+  "custom_program_executed_on_camera": false,
+  "decoded_hashes_match_extraction_manifest": true
+}

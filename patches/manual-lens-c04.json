@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "version": "01.10",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "status": "offline-candidate-C04",
+  "recompression": "preserve-tokens-v1",
+  "flash_ready": false,
+  "hardware_verified": false,
+  "purpose": "Retain C03 manual-lens route/aperture edits and add only SelfShot to the native Program flash menu option list. Physical capture, metering, flash operation and recovery remain unverified.",
+  "feature_claims": {
+    "detached_s2_route_verified_in_bounded_arm_model": true,
+    "no_contact_short_capture_fixed_on_camera": false,
+    "smart_auto_exposure_verified": false,
+    "selfshot_flash_fixed": false,
+    "single_node_fallback_aperture_table_verified_in_bounded_arm_model": true,
+    "physical_aperture_value_known": false,
+    "selfshot_flash_menu_dispatch_verified_in_bounded_arm_model": true,
+    "selfshot_physical_flash_verified": false
+  },
+  "operations": [
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 1367240,
+      "before": "1800001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4014dcc8",
+      "instruction_before": "bne 0x4014dd30",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens S2 interception branch. The following independent 0x464 lens-fault query still executes."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 2604568,
+      "before": "0600001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4027be18",
+      "instruction_before": "bne 0x4027be38",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens branch inside original readiness; the following independent 0x464 fault query and other readiness conditions remain."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110376,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7ee8",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 2 without changing the global physical lens state."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110608,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7fd0",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 6 used at capture completion."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5377764,
+      "before": "1510a0e3",
+      "after": "0110a0e3",
+      "analysis_address": "0x40520ee4",
+      "instruction_before": "mov r1, #0x15",
+      "instruction_after": "mov r1, #1",
+      "reason": "The common CAeLensIF initialize/detach default has IrisDrive=0 but advertises 21 aperture nodes. Keep only its first node. The native lens-data loader subsequently replaces the count and table with received data."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 4190856,
+      "before": "030000ea",
+      "after": "051060e2",
+      "analysis_address": "0x403ff288",
+      "instruction_before": "b 0x403ff29c",
+      "instruction_after": "rsb r1, r0, #5",
+      "reason": "In the lower-mode fallback of CMenuFlash, R0 is UI mode minus 0x2002. R1=5-R0 makes only previously unhandled SelfShot 0x2006 join the original full-option branch; all other 16-bit mode option lists are preserved. Native lens/drive/HDR availability guards remain."
+    }
+  ],
+  "rollback": "Use only the SHA-256-verified official original. An on-device restore/recovery procedure is not yet verified; this candidate is not flash ready.",
+  "candidate_id": "C04",
+  "output_sha256": "a8e71a56bc55bfa9706a977457429945ae9125e05422770caeb75cb8fa957fa8"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "firmware_version": "01.10",
+  "firmware_adapter_profile_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "abi": 1,
+  "enabled": false,
+  "runtime_capabilities": 0,
+  "address_mapping": "section 1 decoded at 0x40000000; not confirmed by a hardware memory read",
+  "findings": {
+    "file_open_wrapper": {"address": "0x4035756c", "mode": "ARM", "status": "original wrapper probed with model backend"},
+    "file_read_wrapper": {"address": "0x403575f4", "mode": "ARM", "result": "actual byte count via backend output pointer", "status": "original wrapper probed with model backend"},
+    "file_close_wrapper": {"address": "0x403577b4", "mode": "ARM", "result": "masks backend close error", "status": "original wrapper probed with model backend"},
+    "task_create_wrapper": {"address": "0x4007db1a", "mode": "Thumb", "status": "static call chain only; task lifecycle not verified"},
+    "shell_dispatch": {"address": "0x40288f34", "mode": "ARM", "status": "static registered-command dispatch; not an SD autorun loader"},
+    "canvas_vtable": {"address": "0x4076fef0", "rtti": "14CGuiCanvasImpl", "pixel_store_bits": 32},
+    "canvas_initialize": {"address": "0x406a07e8", "mode": "ARM", "status": "original instructions probed with model mutex"},
+    "canvas_clear_nonzero_color": {"address": "0x406a0854", "mode": "ARM", "status": "original CPU stores probed"},
+    "canvas_fill_rectangle": {"address": "0x406a09e8", "mode": "ARM", "status": "original CPU stores probed"}
+  },
+  "required_bindings": {
+    "launch_hook_and_code_placement": null,
+    "owned_executable_memory": null,
+    "read_exact_package_from_sd": null,
+    "cpu_instruction_cache_synchronization": null,
+    "display_acquire_present_release": null,
+    "native_pixel_channel_order_and_alpha": null,
+    "input_routing": null,
+    "cooperative_scheduling_and_camera_ui_restore": null
+  },
+  "hardware_verified": false,
+  "flash_ready": false
+}

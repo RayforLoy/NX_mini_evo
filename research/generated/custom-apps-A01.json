@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "artifact": "D:\\NX mini evo\\dist\\nxmini-apps-A01",
+  "zip": "D:\\NX mini evo\\dist\\nxmini-apps-A01.zip",
+  "zip_bytes": 105054,
+  "zip_sha256": "ad1a13b2df7e54c239441baf57cd361d0984e05c89ff45875c181cfae3c29605",
+  "manifest_files": 60,
+  "game_package_sha256": "3c877c80dd3962cbee9e94104ff1529be978ae6f6eee8f75384a77071e696385",
+  "validation": {
+    "schema_version": 1,
+    "package_sha256": "3c877c80dd3962cbee9e94104ff1529be978ae6f6eee8f75384a77071e696385",
+    "native_loader": "cross-compiled C, executed by Unicorn ARM926",
+    "native_session": {
+      "read_load_cache_callback_private_stack_init_frame_present_exit": true,
+      "present_calls": 251,
+      "display_release_calls": 1,
+      "platform_callbacks": "explicit model adapters, no camera interfaces"
+    },
+    "relocation_runs": [
+      {
+        "model_base": "0x12000000",
+        "c_loader_matches_python": true,
+        "entry_executed": true
+      },
+      {
+        "model_base": "0x12200000",
+        "c_loader_matches_python": true,
+        "entry_executed": true
+      },
+      {
+        "model_base": "0x22000000",
+        "c_loader_matches_python": true,
+        "entry_executed": true
+      }
+    ],
+    "invalid_packages": [
+      {
+        "case": "truncated",
+        "native_error": -10,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "trailing-bytes",
+        "native_error": -12,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "bad-crc",
+        "native_error": -13,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "wrong-abi",
+        "native_error": -11,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "image-over-limit",
+        "native_error": -12,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "unaligned-entry",
+        "native_error": -12,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "stack-over-limit",
+        "native_error": -12,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "wrong-profile",
+        "native_error": -14,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "relocation-outside-image",
+        "native_error": -15,
+        "arena_and_info_unchanged": true
+      },
+      {
+        "case": "insufficient-arena",
+        "native_error": -16,
+        "arena_and_info_unchanged": true
+      }
+    ],
+    "game": {
+      "five_levels_completed_by_normal_input": [
+        {
+          "level": 1,
+          "score": 850,
+          "goal": 650,
+          "remaining_ms": 56401
+        },
+        {
+          "level": 2,
+          "score": 1700,
+          "goal": 1500,
+          "remaining_ms": 56267
+        },
+        {
+          "level": 3,
+          "score": 2550,
+          "goal": 2350,
+          "remaining_ms": 56367
+        },
+        {
+          "level": 4,
+          "score": 3335,
+          "goal": 3200,
+          "remaining_ms": 51467
+        },
+        {
+          "level": 5,
+          "score": 4185,
+          "goal": 4050,
+          "remaining_ms": 56167
+        }
+      ],
+      "pause_preserves_timer": true,
+      "back_and_stop_return_to_host": true,
+      "framebuffer_state_stack_guards_intact": true
+    },
+    "model_dependencies": [
+      "executable model RAM",
+      "RGB565 framebuffer",
+      "logical keys",
+      "synthetic elapsed milliseconds",
+      "host-managed state and stack"
+    ],
+    "firmware_adapter_profile_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+    "original_camera_firmware_executed_in_game_probe": false,
+    "camera_adapter_bound": false,
+    "executed_on_camera": false,
+    "flash_ready": false
+  },
+  "camera_adapter_bound": false,
+  "executed_on_camera": false,
+  "flash_ready": false
+}

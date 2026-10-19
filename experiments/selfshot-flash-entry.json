@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "version": "01.10",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "status": "selfshot-entry-experiment-not-a-release",
+  "hardware_verified": false,
+  "flash_ready": false,
+  "recompression": "preserve-tokens-v1",
+  "operations": [
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5463524,
+      "before": "090054e3",
+      "after": "0a0054e3",
+      "analysis_address": "0x40535de4",
+      "reason": "Increase only the SelfShot MENU iterator from 9 to 10 items."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5463780,
+      "before": "344a8040",
+      "after": "304a8040",
+      "analysis_address": "0x40535ee4",
+      "reason": "Prefix the existing SelfShot MENU table with the adjacent original Program flash selector 10, preserving all 9 existing items."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5280864,
+      "before": "3e402de9",
+      "after": "76402de9",
+      "analysis_address": "0x40509460",
+      "reason": "Preserve r6 instead of caller-saved r3 in the SelfShot Fn layout stack frame, maintaining 24-byte stack alignment."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5280880,
+      "before": "0300a0e3",
+      "after": "0400a0e3",
+      "analysis_address": "0x40509470",
+      "reason": "Increase only the SelfShot Fn layout from 3 rows to 4 within the native 5 by 4 grid."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5281136,
+      "before": "0020a0e3731300e30500a0e1c6f6f5eb0500a0e1bafdf5eb50011fe50000d0e5010010e30800000ab222d5e19b0f8fe2b012d5e1803400e307008de874229fe5061d4fe280011fe57076fbeb0100a0e33e80bde8",
+      "after": "204094e50060a0e30430a0e10620a0e10310a0e30500a0e100f5f5eb016086e2040056e3f7ffffba0020a0e3731300e30500a0e1bcf6f5eb0500a0e1b0fdf5eb0100a0e37680bde80000a0e10000a0e10000a0e1",
+      "analysis_address": "0x40509570",
+      "reason": "Preserve the original 12 cells, then add the existing flash item across row 3. Reuse the original title, focus finalizer and return; replace only the SelfShot layout log tail, without a code cave."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7311804,
+      "before": "030000ea",
+      "after": "052061e2",
+      "analysis_address": "0x406f91bc",
+      "reason": "RSB r2,r1,#5 routes only SelfShot 0x2006 to existing Fn flash values 0,4,5,6,7; compare all 16-bit modes."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "ricoh-inspired-positive",
+  "name": "理光 GR 风格参考：正片",
+  "status": "original-authored-experimental-reference",
+  "input_space": "sRGB",
+  "output_space": "sRGB",
+  "matrix_domain": "linear-sRGB",
+  "matrix": [[1.035, -0.025, -0.01], [-0.01, 1.02, -0.01], [-0.005, 0.025, 0.98]],
+  "saturation": 1.12,
+  "shadow_tint": [-0.002, 0, 0.002],
+  "highlight_tint": [0.004, 0.001, -0.003],
+  "curve": [[0, 0], [0.15, 0.11], [0.4, 0.39], [0.7, 0.74], [1, 0.99]],
+  "provenance": "Original approximation; no vendor LUT or calibrated camera matching",
+  "camera_installed": false
+}

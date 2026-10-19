@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "zip_sha256": "ad1a13b2df7e54c239441baf57cd361d0984e05c89ff45875c181cfae3c29605",
+  "extracted_package_rebuilt_game_and_loader_byte_identical": true,
+  "extracted_package_gui_smoke_test_passed": true,
+  "gnu_objcopy_independent_image_comparison_passed": true,
+  "manifest_hashes_verified": 60,
+  "full_regression_tests": 195,
+  "application_specific_tests": 24,
+  "unique_passing_tests_across_reports": 197,
+  "firmware_flashable": false,
+  "game_executed_on_camera": false
+}

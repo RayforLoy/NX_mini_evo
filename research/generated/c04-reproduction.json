@@ -1,0 +1,18 @@
+{
+  "candidate": "C04",
+  "archive": "dist/nxmini-evo-C04-offline-candidate.zip",
+  "archive_sha256": "d6b1662b27a582c68e1e02102a04d99003d2981237ca7f300f2d29e9e2e89489",
+  "archive_files_verified": 89,
+  "source_directory": "work/reproduce-C04",
+  "source_import_verified": true,
+  "reused_project_venv": true,
+  "fresh_dependency_install": false,
+  "official_original_copied_from_verified_local_file": true,
+  "output_sha256": "a8e71a56bc55bfa9706a977457429945ae9125e05422770caeb75cb8fa957fa8",
+  "rebuilt_matches_delivered_image": true,
+  "sections_verified": 7,
+  "resources_unchanged": 163,
+  "mode_dispatch_inputs_compared": 65536,
+  "flash_ready": false,
+  "hardware_verified": false
+}

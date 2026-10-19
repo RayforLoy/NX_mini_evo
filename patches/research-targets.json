@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "version": "01.10",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "status": "research-targets-only",
+  "flash_ready": false,
+  "operations": [],
+  "targets": [
+    {"feature": "manual-lens-no-short", "related_anchor": "factory.boot_flags", "missing": ["normal capture permission predicate", "independent manual lens state", "OEM lens and electronic adapter regression", "recovery path"]},
+    {"feature": "smart-auto-manual-lens", "related_anchor": "ui.aperture_count", "missing": ["Smart Auto AE lens capability branch", "measured-light AE validation without aperture metadata", "shutter/ISO limits and EXIF semantics"]},
+    {"feature": "selfshot-built-in-flash", "related_anchor": "ui.selfshot_transition", "missing": ["actual flash permission predicate", "flip/timer/beauty/adapter separation", "charging and exposure state verification"]}
+  ],
+  "note": "Intentionally has no byte edits. The patch engine rejects this file until verified operations exist."
+}

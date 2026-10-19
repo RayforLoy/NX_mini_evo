@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-17T19:49:00.307805+00:00",
+  "objective": "输出一版修改后的固件，和配套的验证方式",
+  "delivery_status": "modified-firmware-and-offline-verification-delivered",
+  "scope_basis": "The agreed plan explicitly permits offline analysis and candidate patches while flashing prerequisites remain unmet.",
+  "user_plan_gate": "刷写前必须确认校验算法、备份范围和实际恢复路径；未满足时继续交付离线分析与候选补丁，不将其标为可刷版本。",
+  "requirements": [
+    {
+      "requirement": "Modified NX mini 1.10 firmware image",
+      "verified": true,
+      "evidence": "135010548-byte C05 image; 7 section-1 operations with exact preimages; input/output hashes differ"
+    },
+    {
+      "requirement": "Version-bound modification record and offline reversal source",
+      "verified": true,
+      "evidence": "patches/manual-lens-c05.json and docs/candidate-C05.md; official original remains unchanged"
+    },
+    {
+      "requirement": "Reproducible build from official input",
+      "verified": true,
+      "evidence": "Fresh extracted bundle and new virtual environment rebuilt byte-identical C05"
+    },
+    {
+      "requirement": "Independent container and patch verification",
+      "verified": true,
+      "evidence": "All 7 sections, 163 unchanged resources, unchanged writer, known checksums, exact authorised differences"
+    },
+    {
+      "requirement": "Executable verification instructions and tests",
+      "verified": true,
+      "evidence": "New dependency installation, official-original check, extraction, 159 tests without skips, build and verifier commands all executed"
+    },
+    {
+      "requirement": "Reviewable package integrity",
+      "verified": true,
+      "evidence": "95 manifest file hashes and 97 ZIP entry CRCs verified; archive SHA-256 pinned"
+    },
+    {
+      "requirement": "Preserve agreed flashing gate and disclose limits",
+      "verified": true,
+      "evidence": "flash_ready/hardware_verified/recovery_verified and on-camera feature-fix flags all remain false; no flashing command delivered or run"
+    }
+  ],
+  "artifacts": {
+    "firmware": {
+      "path": "dist/nxmini-evo-C05/manual-lens-C05_OFFLINE_ONLY.bin",
+      "sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e"
+    },
+    "package": {
+      "path": "dist/nxmini-evo-C05-offline-candidate-r2.zip",
+      "sha256": "40610917e24c6fdce3e959b26f923e8eed6c089833f1654ec5ce9cd8d2190ee3"
+    },
+    "patch_manifest": {
+      "path": "patches/manual-lens-c05.json",
+      "sha256": "7becdc06bee1832a7669a4a9b43d5ee0301f58d14181a7fc85f2fac48e3e421b"
+    },
+    "independent_verifier": {
+      "path": "tools/verify_candidate.py",
+      "sha256": "54d1022b2d942f7a9c15cf0234fc6b7529ba2f11cb1eb1018a7d720926e28b93"
+    },
+    "instructions": {
+      "path": "docs/candidate-C05.md",
+      "sha256": "d78f3d026bae226279392bec510aa97c53a4e96831cd3bdfeb8125eab208760b"
+    },
+    "hardware_test_gates": {
+      "path": "docs/hardware-validation.md",
+      "sha256": "6012eafef92983d32bf993aedb5f96c07a7b20587d5ba30988c4de77740d0035"
+    },
+    "clean_reproduction": {
+      "path": "research/generated/c05-r2-clean-environment.json",
+      "sha256": "ab5078b3e3f3a5967be6a63bc2ed30aa3ed008720d7e6776bef3468e0ad2397e"
+    }
+  },
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "output_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+  "flash_ready": false,
+  "hardware_verified": false,
+  "recovery_verified": false,
+  "whole_project_complete": false,
+  "unverified_on_camera": [
+    "no-contact-short cold start and photo capture",
+    "Smart Auto sensor metering and exposure",
+    "repeat single-shot readiness",
+    "original 9mm integration",
+    "actual selfie flash",
+    "complete backup and recovery"
+  ],
+  "other_plan_work_not_claimed_complete": [
+    "in-camera experimental menu",
+    "wireless and Synology device integration",
+    "in-camera colour rendering",
+    "measured NX-M electrical protocol"
+  ]
+}

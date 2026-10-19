@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "prepared_at_local": "2026-10-19T15:24:17.626056+08:00",
+  "model": "Samsung NX-M 9mm F3.5",
+  "user_authorized": true,
+  "body_version_reported_by_user": "01.10",
+  "body_upgrade_completed_reported_by_user": true,
+  "current_lens_version_reported_by_user": "01.00",
+  "target_lens_version": "01.11",
+  "official_support_url": "https://www.samsung.com/uk/support/model/EX-YN9ZZZZASEP/",
+  "official_download_url": "https://downloadcenter.samsung.com/content/FM/201504/20150409105728523/9mm_FW_v01.11.zip",
+  "archive_sha256": "69115867825d9059b86ee84a992f92f318ff734fa67f3a476911ef5873e6e74b",
+  "official_redownload_identical": true,
+  "card_identity": {
+    "observed_at_local": "2026-10-19T15:24:17.1485584+08:00",
+    "card_root": "F:\\",
+    "disk_number": 2,
+    "friendly_name": "Samsung Digital Camera",
+    "bus_type": "USB",
+    "disk_bytes": 128177930240,
+    "is_boot": false,
+    "is_system": false,
+    "file_system": "FAT32",
+    "volume_bytes": 128162267136,
+    "free_bytes": 39042220032
+  },
+  "card_file": "F:\\lens.bin",
+  "bytes": 171136,
+  "sha256": "c5ecc497b348cc1a89441c3377f115b59384c66d1bb6ed30b6f39885e4ea0b8e",
+  "operation": "exclusive-temp-write-fsync-readback-rename",
+  "temporary_readback_verified": true,
+  "final_readback_verified": true,
+  "lens_update_started_by_computer": false,
+  "lens_upgrade_completed": false,
+  "version_after": null,
+  "status": "awaiting-physical-camera-menu-action",
+  "guide_url": "https://downloadcenter.samsung.com/content/FM/201404/20140417090945506/NX_Lens_FW_upgrade_guide_i-Launcher_ENG.pdf",
+  "guide_sha256": "c128da9e360deb3da99dc16cfcd349ad1dff52c704a7c0fd09ad9e68bee9bd11",
+  "guide_pages_visually_checked": [
+    4,
+    5
+  ]
+}

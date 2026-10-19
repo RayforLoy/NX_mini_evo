@@ -1,0 +1,1092 @@
+{
+  "schema_version": 1,
+  "sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "bytes": 135010548,
+  "official_baseline": true,
+  "flash_ready": false,
+  "header": {
+    "model": "NXMINI",
+    "version": "01.10",
+    "build": "201501162119",
+    "version2": "GLUAOA2",
+    "block_size": 1024,
+    "writer_size": 326656,
+    "writer_entry": 1073742848,
+    "sdram_parameter_size": 144,
+    "nand_parameter_size": 225,
+    "code_offset": 327680,
+    "code_size": 11529746
+  },
+  "sections": [
+    {
+      "number": 1,
+      "offset": 327680,
+      "size": 5301868,
+      "decoded_bytes": 10832872,
+      "decoded_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+      "ranges": 441,
+      "reference_match": true
+    },
+    {
+      "number": 2,
+      "offset": 5629952,
+      "size": 1726853,
+      "decoded_bytes": 3080624,
+      "decoded_sha256": "5fb351eb99e86aa174ec441af7a63784b1c445fff4f0aaf660542614693e33aa",
+      "ranges": 126,
+      "reference_match": true
+    },
+    {
+      "number": 3,
+      "offset": 7356928,
+      "size": 16,
+      "decoded_bytes": 12,
+      "decoded_sha256": "2b2bce505a89a32f70df4b90fb6af63b699999c0a6605aeda0631410837d5892",
+      "ranges": 1,
+      "reference_match": true
+    },
+    {
+      "number": 4,
+      "offset": 7357440,
+      "size": 400660,
+      "decoded_bytes": 762496,
+      "decoded_sha256": "cf1995cba1794a98fe3c0a40d30a7a5faa38116274dd4b580960fe84b69b683d",
+      "ranges": 31,
+      "reference_match": true
+    },
+    {
+      "number": 5,
+      "offset": 7758336,
+      "size": 4098518,
+      "decoded_bytes": 6759356,
+      "decoded_sha256": "e5bd0f3cb59317eef1835303b0a8fd7dd22df22565c44784fb370e44fe5e7bde",
+      "ranges": 275,
+      "reference_match": true
+    },
+    {
+      "number": 6,
+      "offset": 11856896,
+      "size": 16,
+      "decoded_bytes": 12,
+      "decoded_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "ranges": 1,
+      "reference_match": true
+    },
+    {
+      "number": 7,
+      "offset": 11857408,
+      "size": 16,
+      "decoded_bytes": 12,
+      "decoded_sha256": "4636993d3e1da4e9d6b8f87b79e8f7c6d018580d52661950eabc3845c5897a4d",
+      "ranges": 1,
+      "reference_match": true
+    }
+  ],
+  "resource_offset": 11857920,
+  "resources": [
+    {
+      "name": "NXMINI.HEX",
+      "offset": 11868384,
+      "size": 37388,
+      "extracted_name": "NXMINI.HEX"
+    },
+    {
+      "name": "cd.iso",
+      "offset": 11917536,
+      "size": 456704,
+      "extracted_name": "cd.iso"
+    },
+    {
+      "name": "IQ_CAP.BIN",
+      "offset": 12376288,
+      "size": 25472,
+      "extracted_name": "IQ_CAP.BIN"
+    },
+    {
+      "name": "IQ_COMM.BIN",
+      "offset": 12409056,
+      "size": 60,
+      "extracted_name": "IQ_COMM.BIN"
+    },
+    {
+      "name": "IQ_M_FHD.BIN",
+      "offset": 12425440,
+      "size": 24784,
+      "extracted_name": "IQ_M_FHD.BIN"
+    },
+    {
+      "name": "IQ_M_HD.BIN",
+      "offset": 12458208,
+      "size": 24784,
+      "extracted_name": "IQ_M_HD.BIN"
+    },
+    {
+      "name": "IQ_M_SD.BIN",
+      "offset": 12490976,
+      "size": 26096,
+      "extracted_name": "IQ_M_SD.BIN"
+    },
+    {
+      "name": "IQ_V_FHD.BIN",
+      "offset": 12523744,
+      "size": 24784,
+      "extracted_name": "IQ_V_FHD.BIN"
+    },
+    {
+      "name": "IQ_V_HD.BIN",
+      "offset": 12556512,
+      "size": 24784,
+      "extracted_name": "IQ_V_HD.BIN"
+    },
+    {
+      "name": "IQ_V_SD.BIN",
+      "offset": 12589280,
+      "size": 26096,
+      "extracted_name": "IQ_V_SD.BIN"
+    },
+    {
+      "name": "cac_par1.BIN",
+      "offset": 12622048,
+      "size": 4896,
+      "extracted_name": "cac_par1.BIN"
+    },
+    {
+      "name": "cac_par2.BIN",
+      "offset": 12638432,
+      "size": 4980,
+      "extracted_name": "cac_par2.BIN"
+    },
+    {
+      "name": "cac_par3.BIN",
+      "offset": 12654816,
+      "size": 4980,
+      "extracted_name": "cac_par3.BIN"
+    },
+    {
+      "name": "cac_par4.BIN",
+      "offset": 12671200,
+      "size": 4980,
+      "extracted_name": "cac_par4.BIN"
+    },
+    {
+      "name": "cac_par5.BIN",
+      "offset": 12687584,
+      "size": 4980,
+      "extracted_name": "cac_par5.BIN"
+    },
+    {
+      "name": "COMMON.BIN",
+      "offset": 12703968,
+      "size": 58,
+      "extracted_name": "COMMON.BIN"
+    },
+    {
+      "name": "CAPTURE.BIN",
+      "offset": 12720352,
+      "size": 57004,
+      "extracted_name": "CAPTURE.BIN"
+    },
+    {
+      "name": "dt_bg.jpg",
+      "offset": 12785888,
+      "size": 117219,
+      "extracted_name": "dt_bg.jpg"
+    },
+    {
+      "name": "file_ng.jpg",
+      "offset": 12916960,
+      "size": 16356,
+      "extracted_name": "file_ng.jpg"
+    },
+    {
+      "name": "logo.bin",
+      "offset": 12933344,
+      "size": 307200,
+      "extracted_name": "logo.bin"
+    },
+    {
+      "name": "wifi_bg.yuv",
+      "offset": 13244640,
+      "size": 691200,
+      "extracted_name": "wifi_bg.yuv"
+    },
+    {
+      "name": "mplay_bg.jpg",
+      "offset": 13949152,
+      "size": 177465,
+      "extracted_name": "mplay_bg.jpg"
+    },
+    {
+      "name": "PRD_CMD.XML",
+      "offset": 14129376,
+      "size": 15528,
+      "extracted_name": "PRD_CMD.XML"
+    },
+    {
+      "name": "res.dat",
+      "offset": 14145760,
+      "size": 85463552,
+      "extracted_name": "res.dat"
+    },
+    {
+      "name": "Hdmi_res.dat",
+      "offset": 99621088,
+      "size": 4492288,
+      "extracted_name": "Hdmi_res.dat"
+    },
+    {
+      "name": "Hdmi_f_res.dat",
+      "offset": 104126688,
+      "size": 3332608,
+      "extracted_name": "Hdmi_f_res.dat"
+    },
+    {
+      "name": "pa_1.jpg",
+      "offset": 107469024,
+      "size": 548076,
+      "extracted_name": "pa_1.jpg"
+    },
+    {
+      "name": "pa_1p.jpg",
+      "offset": 108026080,
+      "size": 113106,
+      "extracted_name": "pa_1p.jpg"
+    },
+    {
+      "name": "pa_2.jpg",
+      "offset": 108140768,
+      "size": 275490,
+      "extracted_name": "pa_2.jpg"
+    },
+    {
+      "name": "pa_2p.jpg",
+      "offset": 108419296,
+      "size": 51899,
+      "extracted_name": "pa_2p.jpg"
+    },
+    {
+      "name": "pa_3.jpg",
+      "offset": 108484832,
+      "size": 283604,
+      "extracted_name": "pa_3.jpg"
+    },
+    {
+      "name": "pa_3p.jpg",
+      "offset": 108779744,
+      "size": 73704,
+      "extracted_name": "pa_3p.jpg"
+    },
+    {
+      "name": "pa_4.jpg",
+      "offset": 108861664,
+      "size": 308318,
+      "extracted_name": "pa_4.jpg"
+    },
+    {
+      "name": "pa_4p.jpg",
+      "offset": 109172960,
+      "size": 85517,
+      "extracted_name": "pa_4p.jpg"
+    },
+    {
+      "name": "pa_5.jpg",
+      "offset": 109271264,
+      "size": 151367,
+      "extracted_name": "pa_5.jpg"
+    },
+    {
+      "name": "pa_5p.jpg",
+      "offset": 109435104,
+      "size": 37452,
+      "extracted_name": "pa_5p.jpg"
+    },
+    {
+      "name": "pa_6.jpg",
+      "offset": 109484256,
+      "size": 652185,
+      "extracted_name": "pa_6.jpg"
+    },
+    {
+      "name": "pa_6p.jpg",
+      "offset": 110139616,
+      "size": 101948,
+      "extracted_name": "pa_6p.jpg"
+    },
+    {
+      "name": "pa_7.jpg",
+      "offset": 110254304,
+      "size": 888479,
+      "extracted_name": "pa_7.jpg"
+    },
+    {
+      "name": "pa_7p.jpg",
+      "offset": 111155424,
+      "size": 152815,
+      "extracted_name": "pa_7p.jpg"
+    },
+    {
+      "name": "Cross.raw",
+      "offset": 111319264,
+      "size": 617100,
+      "extracted_name": "Cross.raw"
+    },
+    {
+      "name": "Fisheye2.jpg",
+      "offset": 111941856,
+      "size": 114174,
+      "extracted_name": "Fisheye2.jpg"
+    },
+    {
+      "name": "Fisheye1.raw",
+      "offset": 112056544,
+      "size": 460800,
+      "extracted_name": "Fisheye1.raw"
+    },
+    {
+      "name": "Fisheye3.bin",
+      "offset": 112531680,
+      "size": 1200,
+      "extracted_name": "Fisheye3.bin"
+    },
+    {
+      "name": "HTone3.raw",
+      "offset": 112548064,
+      "size": 76800,
+      "extracted_name": "HTone3.raw"
+    },
+    {
+      "name": "HTone5.raw",
+      "offset": 112629984,
+      "size": 76800,
+      "extracted_name": "HTone5.raw"
+    },
+    {
+      "name": "HTone10.raw",
+      "offset": 112711904,
+      "size": 76800,
+      "extracted_name": "HTone10.raw"
+    },
+    {
+      "name": "Min320.raw",
+      "offset": 112793824,
+      "size": 19200,
+      "extracted_name": "Min320.raw"
+    },
+    {
+      "name": "Min640.raw",
+      "offset": 112826592,
+      "size": 38400,
+      "extracted_name": "Min640.raw"
+    },
+    {
+      "name": "Min460.raw",
+      "offset": 112875744,
+      "size": 63838,
+      "extracted_name": "Min460.raw"
+    },
+    {
+      "name": "Movie_C1.jpg",
+      "offset": 112941280,
+      "size": 401749,
+      "extracted_name": "Movie_C1.jpg"
+    },
+    {
+      "name": "Movie_C2.jpg",
+      "offset": 113350880,
+      "size": 277949,
+      "extracted_name": "Movie_C2.jpg"
+    },
+    {
+      "name": "Movie_C3.jpg",
+      "offset": 113629408,
+      "size": 311879,
+      "extracted_name": "Movie_C3.jpg"
+    },
+    {
+      "name": "Movie_V1.raw",
+      "offset": 113957088,
+      "size": 307200,
+      "extracted_name": "Movie_V1.raw"
+    },
+    {
+      "name": "Movie_V2.raw",
+      "offset": 114268384,
+      "size": 307200,
+      "extracted_name": "Movie_V2.raw"
+    },
+    {
+      "name": "Movie_V3.raw",
+      "offset": 114579680,
+      "size": 307200,
+      "extracted_name": "Movie_V3.raw"
+    },
+    {
+      "name": "Movie_R0.raw",
+      "offset": 114890976,
+      "size": 1555200,
+      "extracted_name": "Movie_R0.raw"
+    },
+    {
+      "name": "Movie_R1.raw",
+      "offset": 116447456,
+      "size": 388800,
+      "extracted_name": "Movie_R1.raw"
+    },
+    {
+      "name": "Sketch0.raw",
+      "offset": 116840672,
+      "size": 1443840,
+      "extracted_name": "Sketch0.raw"
+    },
+    {
+      "name": "Sketch1.raw",
+      "offset": 118298848,
+      "size": 322560,
+      "extracted_name": "Sketch1.raw"
+    },
+    {
+      "name": "VignetC.jpg",
+      "offset": 118626528,
+      "size": 191440,
+      "extracted_name": "VignetC.jpg"
+    },
+    {
+      "name": "VignetV.raw",
+      "offset": 118823136,
+      "size": 460800,
+      "extracted_name": "VignetV.raw"
+    },
+    {
+      "name": "VignetV_PC.raw",
+      "offset": 119298272,
+      "size": 614400,
+      "extracted_name": "VignetV_PC.raw"
+    },
+    {
+      "name": "FD_RSC1",
+      "offset": 119920864,
+      "size": 1781664,
+      "extracted_name": "FD_RSC1"
+    },
+    {
+      "name": "BD_RSC1",
+      "offset": 121706720,
+      "size": 28188,
+      "extracted_name": "BD_RSC1"
+    },
+    {
+      "name": "ED_RSC1",
+      "offset": 121739488,
+      "size": 323628,
+      "extracted_name": "ED_RSC1"
+    },
+    {
+      "name": "SD_RSC1",
+      "offset": 122067168,
+      "size": 270508,
+      "extracted_name": "SD_RSC1"
+    },
+    {
+      "name": "OLDFILM1.JPG",
+      "offset": 122345696,
+      "size": 154647,
+      "extracted_name": "OLDFILM1.JPG"
+    },
+    {
+      "name": "OLDFILM2.JPG",
+      "offset": 122509536,
+      "size": 158531,
+      "extracted_name": "OLDFILM2.JPG"
+    },
+    {
+      "name": "OLDFILM3.JPG",
+      "offset": 122673376,
+      "size": 166034,
+      "extracted_name": "OLDFILM3.JPG"
+    },
+    {
+      "name": "OLDFILM4.JPG",
+      "offset": 122853600,
+      "size": 170281,
+      "extracted_name": "OLDFILM4.JPG"
+    },
+    {
+      "name": "OLDFILM5.JPG",
+      "offset": 123033824,
+      "size": 169271,
+      "extracted_name": "OLDFILM5.JPG"
+    },
+    {
+      "name": "BS_POW1.wav",
+      "offset": 123214048,
+      "size": 104060,
+      "extracted_name": "BS_POW1.wav"
+    },
+    {
+      "name": "BS_POW2.wav",
+      "offset": 123328736,
+      "size": 109046,
+      "extracted_name": "BS_POW2.wav"
+    },
+    {
+      "name": "BS_POW3.wav",
+      "offset": 123443424,
+      "size": 94412,
+      "extracted_name": "BS_POW3.wav"
+    },
+    {
+      "name": "BS_MOVE.wav",
+      "offset": 123541728,
+      "size": 4678,
+      "extracted_name": "BS_MOVE.wav"
+    },
+    {
+      "name": "BS_MOVE2.wav",
+      "offset": 123558112,
+      "size": 5032,
+      "extracted_name": "BS_MOVE2.wav"
+    },
+    {
+      "name": "BS_MENU.wav",
+      "offset": 123574496,
+      "size": 25340,
+      "extracted_name": "BS_MENU.wav"
+    },
+    {
+      "name": "BS_SEL.wav",
+      "offset": 123607264,
+      "size": 3964,
+      "extracted_name": "BS_SEL.wav"
+    },
+    {
+      "name": "BS_OK.wav",
+      "offset": 123623648,
+      "size": 3484,
+      "extracted_name": "BS_OK.wav"
+    },
+    {
+      "name": "BS_TOUCH.wav",
+      "offset": 123640032,
+      "size": 5340,
+      "extracted_name": "BS_TOUCH.wav"
+    },
+    {
+      "name": "BS_DEPTH.wav",
+      "offset": 123656416,
+      "size": 4904,
+      "extracted_name": "BS_DEPTH.wav"
+    },
+    {
+      "name": "BS_CANCL.wav",
+      "offset": 123672800,
+      "size": 17708,
+      "extracted_name": "BS_CANCL.wav"
+    },
+    {
+      "name": "BS_NOBAT.wav",
+      "offset": 123705568,
+      "size": 194228,
+      "extracted_name": "BS_NOBAT.wav"
+    },
+    {
+      "name": "BS_NOKEY.wav",
+      "offset": 123902176,
+      "size": 13308,
+      "extracted_name": "BS_NOKEY.wav"
+    },
+    {
+      "name": "BS_INFO.wav",
+      "offset": 123918560,
+      "size": 12168,
+      "extracted_name": "BS_INFO.wav"
+    },
+    {
+      "name": "BS_WARN.wav",
+      "offset": 123934944,
+      "size": 20768,
+      "extracted_name": "BS_WARN.wav"
+    },
+    {
+      "name": "BS_CONN.wav",
+      "offset": 123967712,
+      "size": 88888,
+      "extracted_name": "BS_CONN.wav"
+    },
+    {
+      "name": "BS_UNCON.wav",
+      "offset": 124066016,
+      "size": 44328,
+      "extracted_name": "BS_UNCON.wav"
+    },
+    {
+      "name": "BS_REC1.wav",
+      "offset": 124115168,
+      "size": 26632,
+      "extracted_name": "BS_REC1.wav"
+    },
+    {
+      "name": "BS_REC2.wav",
+      "offset": 124147936,
+      "size": 47768,
+      "extracted_name": "BS_REC2.wav"
+    },
+    {
+      "name": "BS_AF_OK.wav",
+      "offset": 124197088,
+      "size": 10612,
+      "extracted_name": "BS_AF_OK.wav"
+    },
+    {
+      "name": "BS_SHT_SHORT.wav",
+      "offset": 124213472,
+      "size": 4362,
+      "extracted_name": "BS_SHT_SHORT.wav"
+    },
+    {
+      "name": "BS_SHT_SHORT_5count.wav",
+      "offset": 124229856,
+      "size": 35870,
+      "extracted_name": "BS_SHT_SHORT_5count.wav"
+    },
+    {
+      "name": "BS_SHT_SHORT_30ms.wav",
+      "offset": 124279008,
+      "size": 1978,
+      "extracted_name": "BS_SHT_SHORT_30ms.wav"
+    },
+    {
+      "name": "BS_SHT_Conti_Normal.wav",
+      "offset": 124295392,
+      "size": 44236,
+      "extracted_name": "BS_SHT_Conti_Normal.wav"
+    },
+    {
+      "name": "BS_SHT_Conti_6fps.wav ",
+      "offset": 124344544,
+      "size": 22904,
+      "extracted_name": "BS_SHT_Conti_6fps.wav%20"
+    },
+    {
+      "name": "BS_SHT1.wav",
+      "offset": 124377312,
+      "size": 63532,
+      "extracted_name": "BS_SHT1.wav"
+    },
+    {
+      "name": "BS_SHT_Burst_10fps.wav",
+      "offset": 124442848,
+      "size": 552344,
+      "extracted_name": "BS_SHT_Burst_10fps.wav"
+    },
+    {
+      "name": "BS_SHT_Burst_15fps.wav",
+      "offset": 124999904,
+      "size": 375752,
+      "extracted_name": "BS_SHT_Burst_15fps.wav"
+    },
+    {
+      "name": "BS_SHT_Burst_30fps.wav",
+      "offset": 125376736,
+      "size": 257624,
+      "extracted_name": "BS_SHT_Burst_30fps.wav"
+    },
+    {
+      "name": "BS_COUNT.wav",
+      "offset": 125638880,
+      "size": 2480,
+      "extracted_name": "BS_COUNT.wav"
+    },
+    {
+      "name": "BS_2SEC.wav",
+      "offset": 125655264,
+      "size": 87500,
+      "extracted_name": "BS_2SEC.wav"
+    },
+    {
+      "name": "BS_SHT_LONG_OPEN.wav",
+      "offset": 125753568,
+      "size": 16000,
+      "extracted_name": "BS_SHT_LONG_OPEN.wav"
+    },
+    {
+      "name": "BS_SHT_LONG_CLOSE.wav",
+      "offset": 125769952,
+      "size": 15992,
+      "extracted_name": "BS_SHT_LONG_CLOSE.wav"
+    },
+    {
+      "name": "BS_MC1.wav",
+      "offset": 125786336,
+      "size": 13944,
+      "extracted_name": "BS_MC1.wav"
+    },
+    {
+      "name": "BS_FACE1.wav",
+      "offset": 125802720,
+      "size": 36428,
+      "extracted_name": "BS_FACE1.wav"
+    },
+    {
+      "name": "BS_FACE2.wav",
+      "offset": 125851872,
+      "size": 36048,
+      "extracted_name": "BS_FACE2.wav"
+    },
+    {
+      "name": "BS_FACE3.wav",
+      "offset": 125901024,
+      "size": 3428,
+      "extracted_name": "BS_FACE3.wav"
+    },
+    {
+      "name": "BS_JINGLE.wav",
+      "offset": 125917408,
+      "size": 218468,
+      "extracted_name": "BS_JINGLE.wav"
+    },
+    {
+      "name": "BS_MEW.wav",
+      "offset": 126146784,
+      "size": 208920,
+      "extracted_name": "BS_MEW.wav"
+    },
+    {
+      "name": "BS_DRIPPING.wav",
+      "offset": 126359776,
+      "size": 102244,
+      "extracted_name": "BS_DRIPPING.wav"
+    },
+    {
+      "name": "BS_TIMER.wav",
+      "offset": 126474464,
+      "size": 30188,
+      "extracted_name": "BS_TIMER.wav"
+    },
+    {
+      "name": "BS_TIMER_2SEC.wav",
+      "offset": 126507232,
+      "size": 381484,
+      "extracted_name": "BS_TIMER_2SEC.wav"
+    },
+    {
+      "name": "BS_TIMER_3SEC.wav",
+      "offset": 126900448,
+      "size": 278956,
+      "extracted_name": "BS_TIMER_3SEC.wav"
+    },
+    {
+      "name": "BS_ROTATION.wav",
+      "offset": 127195360,
+      "size": 5316,
+      "extracted_name": "BS_ROTATION.wav"
+    },
+    {
+      "name": "BS_NFC_START.wav",
+      "offset": 127211744,
+      "size": 124714,
+      "extracted_name": "BS_NFC_START.wav"
+    },
+    {
+      "name": "BS_TEST.wav",
+      "offset": 127342816,
+      "size": 24222,
+      "extracted_name": "BS_TEST.wav"
+    },
+    {
+      "name": "im_10_1m.bin",
+      "offset": 127375584,
+      "size": 123154,
+      "extracted_name": "im_10_1m.bin"
+    },
+    {
+      "name": "im_13_3m.bin",
+      "offset": 127506656,
+      "size": 134802,
+      "extracted_name": "im_13_3m.bin"
+    },
+    {
+      "name": "im_16_9m.bin",
+      "offset": 127654112,
+      "size": 191378,
+      "extracted_name": "im_16_9m.bin"
+    },
+    {
+      "name": "im_1_1m.bin",
+      "offset": 127850720,
+      "size": 10578,
+      "extracted_name": "im_1_1m.bin"
+    },
+    {
+      "name": "im_20m.bin",
+      "offset": 127867104,
+      "size": 238290,
+      "extracted_name": "im_20m.bin"
+    },
+    {
+      "name": "im_2m.bin",
+      "offset": 128112864,
+      "size": 27218,
+      "extracted_name": "im_2m.bin"
+    },
+    {
+      "name": "im_2_1m.bin",
+      "offset": 128145632,
+      "size": 23570,
+      "extracted_name": "im_2_1m.bin"
+    },
+    {
+      "name": "im_4m.bin",
+      "offset": 128178400,
+      "size": 40338,
+      "extracted_name": "im_4m.bin"
+    },
+    {
+      "name": "im_4_9m.bin",
+      "offset": 128227552,
+      "size": 57618,
+      "extracted_name": "im_4_9m.bin"
+    },
+    {
+      "name": "im_5m.bin",
+      "offset": 128293088,
+      "size": 65682,
+      "extracted_name": "im_5m.bin"
+    },
+    {
+      "name": "im_5_9m.bin",
+      "offset": 128375008,
+      "size": 76114,
+      "extracted_name": "im_5_9m.bin"
+    },
+    {
+      "name": "im_7m.bin",
+      "offset": 128456928,
+      "size": 69906,
+      "extracted_name": "im_7m.bin"
+    },
+    {
+      "name": "im_7_8m.bin",
+      "offset": 128538848,
+      "size": 92178,
+      "extracted_name": "im_7_8m.bin"
+    },
+    {
+      "name": "im_vga.bin",
+      "offset": 128637152,
+      "size": 3474,
+      "extracted_name": "im_vga.bin"
+    },
+    {
+      "name": "set_bg.jpg",
+      "offset": 128653536,
+      "size": 13308,
+      "extracted_name": "set_bg.jpg"
+    },
+    {
+      "name": "DV_DSC.jpg",
+      "offset": 128669920,
+      "size": 18605,
+      "extracted_name": "DV_DSC.jpg"
+    },
+    {
+      "name": "DV_DSC.png",
+      "offset": 128702688,
+      "size": 2038,
+      "extracted_name": "DV_DSC.png"
+    },
+    {
+      "name": "DV_DSC_S.jpg",
+      "offset": 128719072,
+      "size": 12952,
+      "extracted_name": "DV_DSC_S.jpg"
+    },
+    {
+      "name": "DV_DSC_S.png",
+      "offset": 128735456,
+      "size": 740,
+      "extracted_name": "DV_DSC_S.png"
+    },
+    {
+      "name": "DEV_NO.jpg",
+      "offset": 128751840,
+      "size": 29151,
+      "extracted_name": "DEV_NO.jpg"
+    },
+    {
+      "name": "wifi_00.bin",
+      "offset": 128784608,
+      "size": 13583,
+      "extracted_name": "wifi_00.bin"
+    },
+    {
+      "name": "wifi_01.bin",
+      "offset": 128800992,
+      "size": 66469,
+      "extracted_name": "wifi_01.bin"
+    },
+    {
+      "name": "wifi_02.bin",
+      "offset": 128882912,
+      "size": 87936,
+      "extracted_name": "wifi_02.bin"
+    },
+    {
+      "name": "wifi_03.bin",
+      "offset": 128981216,
+      "size": 63048,
+      "extracted_name": "wifi_03.bin"
+    },
+    {
+      "name": "wifi_04.bin",
+      "offset": 129046752,
+      "size": 113645,
+      "extracted_name": "wifi_04.bin"
+    },
+    {
+      "name": "wifi_05.bin",
+      "offset": 129161440,
+      "size": 172,
+      "extracted_name": "wifi_05.bin"
+    },
+    {
+      "name": "wifi_06.bin",
+      "offset": 129177824,
+      "size": 12689,
+      "extracted_name": "wifi_06.bin"
+    },
+    {
+      "name": "wifi_07.bin",
+      "offset": 129194208,
+      "size": 12750,
+      "extracted_name": "wifi_07.bin"
+    },
+    {
+      "name": "wifi_08.bin",
+      "offset": 129210592,
+      "size": 3933,
+      "extracted_name": "wifi_08.bin"
+    },
+    {
+      "name": "cNXMINI.bin",
+      "offset": 129226976,
+      "size": 2048,
+      "extracted_name": "cNXMINI.bin"
+    },
+    {
+      "name": "net_bg0.jpg",
+      "offset": 129243360,
+      "size": 7408,
+      "extracted_name": "net_bg0.jpg"
+    },
+    {
+      "name": "net_bg2.jpg",
+      "offset": 129259744,
+      "size": 7409,
+      "extracted_name": "net_bg2.jpg"
+    },
+    {
+      "name": "net_bg3.jpg",
+      "offset": 129276128,
+      "size": 7409,
+      "extracted_name": "net_bg3.jpg"
+    },
+    {
+      "name": "qwty_bg.jpg",
+      "offset": 129292512,
+      "size": 10953,
+      "extracted_name": "qwty_bg.jpg"
+    },
+    {
+      "name": "net_bg0.yuv",
+      "offset": 129308896,
+      "size": 691200,
+      "extracted_name": "net_bg0.yuv"
+    },
+    {
+      "name": "net_bg2.yuv",
+      "offset": 130013408,
+      "size": 691250,
+      "extracted_name": "net_bg2.yuv"
+    },
+    {
+      "name": "net_bg3.yuv",
+      "offset": 130717920,
+      "size": 691208,
+      "extracted_name": "net_bg3.yuv"
+    },
+    {
+      "name": "qwty_bg.yuv",
+      "offset": 131422432,
+      "size": 691200,
+      "extracted_name": "qwty_bg.yuv"
+    },
+    {
+      "name": "ChsSysDic.dic",
+      "offset": 132126944,
+      "size": 1478464,
+      "extracted_name": "ChsSysDic.dic"
+    },
+    {
+      "name": "ChsUserDic.dic",
+      "offset": 133617888,
+      "size": 31744,
+      "extracted_name": "ChsUserDic.dic"
+    },
+    {
+      "name": "ChtSysDic.dic",
+      "offset": 133650656,
+      "size": 1163484,
+      "extracted_name": "ChtSysDic.dic"
+    },
+    {
+      "name": "ChtUserDic.dic",
+      "offset": 134830304,
+      "size": 31744,
+      "extracted_name": "ChtUserDic.dic"
+    },
+    {
+      "name": "lcd_grad_cir.jpg",
+      "offset": 134863072,
+      "size": 26484,
+      "extracted_name": "lcd_grad_cir.jpg"
+    },
+    {
+      "name": "lcd_grad_hori.jpg",
+      "offset": 134895840,
+      "size": 32586,
+      "extracted_name": "lcd_grad_hori.jpg"
+    },
+    {
+      "name": "lcd_cross.jpg",
+      "offset": 134928608,
+      "size": 81261,
+      "extracted_name": "lcd_cross.jpg"
+    }
+  ],
+  "checksums": {
+    "code": {
+      "algorithm": "sum-le16-zero",
+      "offset": 327680,
+      "size": 11529746,
+      "stored": 2285,
+      "sum": 0,
+      "valid": true
+    },
+    "file": {
+      "algorithm": "sum-le32",
+      "offset": 0,
+      "size": 135010528,
+      "stored": 3474093504,
+      "calculated": 3474093504,
+      "valid": true
+    },
+    "footer_size": {
+      "stored": 135010528,
+      "expected": 135010528,
+      "valid": true
+    },
+    "footer_uninterpreted": "fc0000000000000000000000"
+  },
+  "valid": true,
+  "footer_layout_preserved": true
+}

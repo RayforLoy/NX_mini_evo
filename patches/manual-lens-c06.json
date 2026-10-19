@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "version": "01.10",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "status": "offline-candidate-C06",
+  "recompression": "preserve-tokens-v1",
+  "flash_ready": false,
+  "hardware_verified": false,
+  "purpose": "Retain all C05 edits. Add the existing flash selector to SelfShot MENU without dropping existing items; add the existing Flash item as a fourth Fn row; enable only SelfShot native Fn flash values 0,4,5,6,7. Based on C05 hardware feedback with the original 9mm lens: flash absent in both MENU and Fn. UI rendering and physical flash are still unverified.",
+  "feature_claims": {
+    "detached_s2_route_verified_in_bounded_arm_model": true,
+    "no_contact_short_capture_fixed_on_camera": false,
+    "smart_auto_exposure_verified": false,
+    "selfshot_flash_fixed": false,
+    "single_node_fallback_aperture_table_verified_in_bounded_arm_model": true,
+    "physical_aperture_value_known": false,
+    "selfshot_flash_menu_dispatch_verified_in_bounded_arm_model": true,
+    "selfshot_physical_flash_verified": false,
+    "single_node_manual_ae_compensation_verified_in_bounded_arm_model": true,
+    "native_selfshot_program_line_flash_enable_verified_in_bounded_arm_model": true,
+    "selfshot_outer_menu_and_fn_entries_verified_in_bounded_arm_model": true
+  },
+  "operations": [
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 1367240,
+      "before": "1800001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4014dcc8",
+      "instruction_before": "bne 0x4014dd30",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens S2 interception branch. The following independent 0x464 lens-fault query still executes."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 2604568,
+      "before": "0600001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4027be18",
+      "instruction_before": "bne 0x4027be38",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens branch inside original readiness; the following independent 0x464 fault query and other readiness conditions remain."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110376,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7ee8",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 2 without changing the global physical lens state."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110608,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7fd0",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 6 used at capture completion."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5377764,
+      "before": "1510a0e3",
+      "after": "0110a0e3",
+      "analysis_address": "0x40520ee4",
+      "instruction_before": "mov r1, #0x15",
+      "instruction_after": "mov r1, #1",
+      "reason": "The common CAeLensIF initialize/detach default has IrisDrive=0 but advertises 21 aperture nodes. Keep only its first node. The native lens-data loader subsequently replaces the count and table with received data."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 4190856,
+      "before": "030000ea",
+      "after": "051060e2",
+      "analysis_address": "0x403ff288",
+      "instruction_before": "b 0x403ff29c",
+      "instruction_after": "rsb r1, r0, #5",
+      "reason": "In the lower-mode fallback of CMenuFlash, R0 is UI mode minus 0x2002. R1=5-R0 makes only previously unhandled SelfShot 0x2006 join the original full-option branch; all other 16-bit mode option lists are preserved. Native lens/drive/HDR availability guards remain."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 2403056,
+      "before": "0410a0e10000a0e3b9c90beb0010a0e30710c4e50610c4e5060050e1",
+      "after": "fe06d8e1010050e30800a0010410a001f2fcff0b0010a0e3b610c4e1",
+      "analysis_address": "0x4024aaf0",
+      "instruction_before": "mov r1,r4; mov r0,#0; bl 0x4053d1e4; mov r1,#0; strb r1,[r4,#7]; strb r1,[r4,#6]; cmp r0,r6",
+      "instruction_after": "ldrsh r0,[r8,#0x6e]; cmp r0,#1; moveq r0,r8; moveq r1,r4; bleq 0x40249ed0; mov r1,#0; strh r1,[r4,#6]",
+      "reason": "The native Manual AE path is used by Smart Auto scene 0x12 after a fixed AV=96 preset and bypasses table quantization. Replace a side-effect-free discarded EV calculation and dead comparison with the original AV/TV compensator only when the aperture table has one node. Preserve zeroing of bytes 6/7 via one halfword store. Multi-node tables skip the compensator."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5463524,
+      "before": "090054e3",
+      "after": "0a0054e3",
+      "analysis_address": "0x40535de4",
+      "reason": "Increase only the SelfShot MENU iterator from 9 to 10 items."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5463780,
+      "before": "344a8040",
+      "after": "304a8040",
+      "analysis_address": "0x40535ee4",
+      "reason": "Prefix the existing SelfShot MENU table with the adjacent original Program flash selector 10, preserving all 9 existing items."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5280864,
+      "before": "3e402de9",
+      "after": "76402de9",
+      "analysis_address": "0x40509460",
+      "reason": "Preserve r6 instead of caller-saved r3 in the SelfShot Fn layout stack frame, maintaining 24-byte stack alignment."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5280880,
+      "before": "0300a0e3",
+      "after": "0400a0e3",
+      "analysis_address": "0x40509470",
+      "reason": "Increase only the SelfShot Fn layout from 3 rows to 4 within the native 5 by 4 grid."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 5281136,
+      "before": "0020a0e3731300e30500a0e1c6f6f5eb0500a0e1bafdf5eb50011fe50000d0e5010010e30800000ab222d5e19b0f8fe2b012d5e1803400e307008de874229fe5061d4fe280011fe57076fbeb0100a0e33e80bde8",
+      "after": "204094e50060a0e30430a0e10620a0e10310a0e30500a0e100f5f5eb016086e2040056e3f7ffffba0020a0e3731300e30500a0e1bcf6f5eb0500a0e1b0fdf5eb0100a0e37680bde80000a0e10000a0e10000a0e1",
+      "analysis_address": "0x40509570",
+      "reason": "Preserve the original 12 cells, then add the existing flash item across row 3. Reuse the original title, focus finalizer and return; replace only the SelfShot layout log tail, without a code cave."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7311804,
+      "before": "030000ea",
+      "after": "052061e2",
+      "analysis_address": "0x406f91bc",
+      "reason": "RSB r2,r1,#5 routes only SelfShot 0x2006 to existing Fn flash values 0,4,5,6,7; compare all 16-bit modes."
+    }
+  ],
+  "rollback": "Restore the SHA-verified official 1.10 firmware using the normal updater if accessible. C05 backup may also be retained as the previously user-tested candidate. Disassembled recovery is documented but not tested on this camera.",
+  "candidate_id": "C06",
+  "hardware_feedback_baseline": "research/generated/c05-hardware-feedback-20261019.json",
+  "output_sha256": "d0780b10ecfec245e3ed77614b6e9779f915c2d2d25b7bb1bcab5cd2e3b7a1cd"
+}

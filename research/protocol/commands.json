@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "mount": "NX-M",
+  "verified_commands": [],
+  "captures_available": false,
+  "note": "No electrical commands or pinout are asserted without passive capture evidence."
+}

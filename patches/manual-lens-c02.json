@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "model": "NXMINI",
+  "version": "01.10",
+  "input_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "status": "offline-candidate-C02",
+  "recompression": "preserve-tokens-v1",
+  "flash_ready": false,
+  "hardware_verified": false,
+  "purpose": "Extend C01 to retain detached-lens S2 routing when the native readiness 0x400000 state bit is set; execute the original startS2Mode and timer handler in bounded verification.",
+  "feature_claims": {
+    "detached_s2_route_verified_in_bounded_arm_model": true,
+    "no_contact_short_capture_fixed_on_camera": false,
+    "smart_auto_exposure_verified": false,
+    "selfshot_flash_fixed": false
+  },
+  "operations": [
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 1367240,
+      "before": "1800001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4014dcc8",
+      "instruction_before": "bne 0x4014dd30",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens S2 interception branch. The following independent 0x464 lens-fault query still executes."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 2604568,
+      "before": "0600001a",
+      "after": "0000a0e1",
+      "analysis_address": "0x4027be18",
+      "instruction_before": "bne 0x4027be38",
+      "instruction_after": "mov r0, r0",
+      "reason": "Remove only the detached-lens branch inside original readiness; the following independent 0x464 fault query and other readiness conditions remain."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110376,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7ee8",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 2 without changing the global physical lens state."
+    },
+    {
+      "space": "section",
+      "section": 1,
+      "offset": 7110608,
+      "before": "010110e3",
+      "after": "0100b0e3",
+      "analysis_address": "0x406c7fd0",
+      "instruction_before": "tst r0, #0x40000000",
+      "instruction_after": "movs r0, #1",
+      "reason": "Take the original nolens-enabled path for detached event 6 used at capture completion."
+    }
+  ],
+  "rollback": "Use only the SHA-256-verified official original. An on-device restore/recovery procedure is not yet verified; this candidate is not flash ready.",
+  "candidate_id": "C02",
+  "output_sha256": "96301d75c5cf3d7e1218d2897665b8530caeceb6f3be0033f691cd46003908fd"
+}

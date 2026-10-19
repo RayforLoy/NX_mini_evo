@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "capture_id": "CAP-0001",
+  "status": "template-not-a-measurement",
+  "timestamp_with_timezone": null,
+  "camera_model": "Samsung NX mini",
+  "camera_firmware": "01.10",
+  "lens": "Samsung NX-M 9mm",
+  "lens_firmware": null,
+  "analyser_model": null,
+  "sample_rate_hz": null,
+  "input_threshold_v": null,
+  "measured_levels_v": null,
+  "pin_orientation_photo": null,
+  "channel_to_contact": {},
+  "operation_steps": [],
+  "files": [],
+  "files_schema": {"path": "relative/path", "sha256": "required-for-every-raw-file"},
+  "decoder": {"type": null, "parameters": {}},
+  "observations": [],
+  "hardware_verified": false
+}

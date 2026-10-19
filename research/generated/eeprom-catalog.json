@@ -1,0 +1,1870 @@
+{
+  "schema_version": 1,
+  "section4_analysis_base": "0x40d45000",
+  "mapping_hardware_verified": false,
+  "entries": [
+    {
+      "id": 261,
+      "name": "EEP_SMARTPRO_MODE",
+      "table_offset": 735484,
+      "string_offset": 737140,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 420,
+      "name": "EEP_SELF_SHOT_ON_OFF_IMMEDIATELY",
+      "table_offset": 735492,
+      "string_offset": 737159,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 262,
+      "name": "EEP_AUTO_SHARE",
+      "table_offset": 735500,
+      "string_offset": 737192,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 263,
+      "name": "EEP_PHOTO_SIZE",
+      "table_offset": 735508,
+      "string_offset": 737208,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 300,
+      "name": "EEP_PHOTO_SIZE_01",
+      "table_offset": 735516,
+      "string_offset": 737224,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 301,
+      "name": "EEP_PHOTO_SIZE_02",
+      "table_offset": 735524,
+      "string_offset": 737242,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 302,
+      "name": "EEP_PHOTO_QUALITY",
+      "table_offset": 735532,
+      "string_offset": 737260,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 303,
+      "name": "EEP_PHOTO_QUALITY_01",
+      "table_offset": 735540,
+      "string_offset": 737278,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 304,
+      "name": "EEP_PHOTO_QUALITY_02",
+      "table_offset": 735548,
+      "string_offset": 737299,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 305,
+      "name": "EEP_ISO",
+      "table_offset": 735556,
+      "string_offset": 737320,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 306,
+      "name": "EEP_ISO_01",
+      "table_offset": 735564,
+      "string_offset": 737328,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 307,
+      "name": "EEP_ISO_3",
+      "table_offset": 735572,
+      "string_offset": 737339,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 308,
+      "name": "EEP_ISO_3_01",
+      "table_offset": 735580,
+      "string_offset": 737349,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 309,
+      "name": "EEP_MINIMUM_SHUTTER_SPEED",
+      "table_offset": 735588,
+      "string_offset": 737362,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 310,
+      "name": "EEP_MINIMUM_SHUTTER_SPEED_01",
+      "table_offset": 735596,
+      "string_offset": 737388,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 311,
+      "name": "EEP_WHTE_BALANCE",
+      "table_offset": 735604,
+      "string_offset": 737417,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 312,
+      "name": "EEP_WHTE_BALANCE_01",
+      "table_offset": 735612,
+      "string_offset": 737434,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 313,
+      "name": "EEP_PICTURE_WIZARD",
+      "table_offset": 735620,
+      "string_offset": 737454,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 314,
+      "name": "EEP_PICTURE_WIZARD_01",
+      "table_offset": 735628,
+      "string_offset": 737473,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 315,
+      "name": "EEP_SMART_FILTER",
+      "table_offset": 735636,
+      "string_offset": 737495,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 316,
+      "name": "EEP_SMART_FILTER_01",
+      "table_offset": 735644,
+      "string_offset": 737512,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 620,
+      "name": "EEP_MOVIE_SMART_FILTER",
+      "table_offset": 735652,
+      "string_offset": 737532,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 317,
+      "name": "EEP_AF_MODE",
+      "table_offset": 735660,
+      "string_offset": 737555,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 318,
+      "name": "EEP_AF_MODE_01",
+      "table_offset": 735668,
+      "string_offset": 737567,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 319,
+      "name": "EEP_AF_MODE_02",
+      "table_offset": 735676,
+      "string_offset": 737582,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 320,
+      "name": "EEP_AF_MODE_03",
+      "table_offset": 735684,
+      "string_offset": 737597,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 321,
+      "name": "EEP_AF_AREA",
+      "table_offset": 735692,
+      "string_offset": 737612,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 322,
+      "name": "EEP_AF_AREA_01",
+      "table_offset": 735700,
+      "string_offset": 737624,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 323,
+      "name": "EEP_AF_AREA_02",
+      "table_offset": 735708,
+      "string_offset": 737639,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 324,
+      "name": "EEP_FACE_DETECTION",
+      "table_offset": 735716,
+      "string_offset": 737654,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 325,
+      "name": "EEP_FACE_DETECTION_01",
+      "table_offset": 735724,
+      "string_offset": 737673,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 326,
+      "name": "EEP_FACE_DETECTION_02",
+      "table_offset": 735732,
+      "string_offset": 737695,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 328,
+      "name": "EEP_TOUCH_AF",
+      "table_offset": 735740,
+      "string_offset": 737717,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 329,
+      "name": "EEP_TOUCH_AF_01",
+      "table_offset": 735748,
+      "string_offset": 737730,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 330,
+      "name": "EEP_TOUCH_AF_02",
+      "table_offset": 735756,
+      "string_offset": 737746,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 331,
+      "name": "EEP_TOUCH_AF_03",
+      "table_offset": 735764,
+      "string_offset": 737762,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 332,
+      "name": "EEP_MF_ASSIST",
+      "table_offset": 735772,
+      "string_offset": 737778,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 333,
+      "name": "EEP_LINK_AE_TO_AF",
+      "table_offset": 735780,
+      "string_offset": 737792,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 334,
+      "name": "EEP_LINK_AE_TO_AF_01",
+      "table_offset": 735788,
+      "string_offset": 737810,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 335,
+      "name": "EEP_FRAMING_MODE",
+      "table_offset": 735796,
+      "string_offset": 737831,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 336,
+      "name": "EEP_FRAMING_MODE_01",
+      "table_offset": 735804,
+      "string_offset": 737848,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 337,
+      "name": "EEP_OIS",
+      "table_offset": 735812,
+      "string_offset": 737868,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 338,
+      "name": "EEP_OIS_01",
+      "table_offset": 735820,
+      "string_offset": 737876,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 339,
+      "name": "EEP_DRIVE",
+      "table_offset": 735828,
+      "string_offset": 737887,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 340,
+      "name": "EEP_DRIVE_01",
+      "table_offset": 735836,
+      "string_offset": 737897,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 341,
+      "name": "EEP_DRIVE_02",
+      "table_offset": 735844,
+      "string_offset": 737910,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 342,
+      "name": "EEP_DRIVE_03",
+      "table_offset": 735852,
+      "string_offset": 737923,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 343,
+      "name": "EEP_DRIVE_04",
+      "table_offset": 735860,
+      "string_offset": 737936,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 344,
+      "name": "EEP_DRIVE_05",
+      "table_offset": 735868,
+      "string_offset": 737949,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 345,
+      "name": "EEP_DRIVE_06",
+      "table_offset": 735876,
+      "string_offset": 737962,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 347,
+      "name": "EEP_METERING",
+      "table_offset": 735884,
+      "string_offset": 737975,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 348,
+      "name": "EEP_METERING_01",
+      "table_offset": 735892,
+      "string_offset": 737988,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 349,
+      "name": "EEP_DYNAMIC_RANGE",
+      "table_offset": 735900,
+      "string_offset": 738004,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 350,
+      "name": "EEP_DYNAMIC_RANGE_01",
+      "table_offset": 735908,
+      "string_offset": 738022,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 351,
+      "name": "EEP_FLASH",
+      "table_offset": 735916,
+      "string_offset": 738043,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 352,
+      "name": "EEP_FLASH_01",
+      "table_offset": 735924,
+      "string_offset": 738053,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 353,
+      "name": "EEP_FLASH_02",
+      "table_offset": 735932,
+      "string_offset": 738066,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 354,
+      "name": "EEP_FLASH_03",
+      "table_offset": 735940,
+      "string_offset": 738079,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 355,
+      "name": "EEP_FLASH_04",
+      "table_offset": 735948,
+      "string_offset": 738092,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 356,
+      "name": "EEP_MOVIE_SIZE",
+      "table_offset": 735956,
+      "string_offset": 738105,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 357,
+      "name": "EEP_MOVIE_QUALITY",
+      "table_offset": 735964,
+      "string_offset": 738120,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 358,
+      "name": "EEP_MOVIE_MULTI_MOTION",
+      "table_offset": 735972,
+      "string_offset": 738138,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 359,
+      "name": "EEP_MOVIE_FADER",
+      "table_offset": 735980,
+      "string_offset": 738161,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 360,
+      "name": "EEP_MOVIE_VOICE",
+      "table_offset": 735988,
+      "string_offset": 738177,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 361,
+      "name": "EEP_MOVIE_WIND_CUT",
+      "table_offset": 735996,
+      "string_offset": 738193,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 362,
+      "name": "EEP_MOVIE_MIC_LEVEL",
+      "table_offset": 736004,
+      "string_offset": 738212,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 363,
+      "name": "EEP_ISO_STEP",
+      "table_offset": 736012,
+      "string_offset": 738232,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 364,
+      "name": "EEP_AUTO_ISO_RANGE",
+      "table_offset": 736020,
+      "string_offset": 738245,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 365,
+      "name": "EEP_AUTO_ISO_RANGE_3",
+      "table_offset": 736028,
+      "string_offset": 738264,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 366,
+      "name": "EEP_HIGH_ISO_NOISE_REDUCTION",
+      "table_offset": 736036,
+      "string_offset": 738285,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 367,
+      "name": "EEP_HIGH_ISO_NOISE_REDUCTION_01",
+      "table_offset": 736044,
+      "string_offset": 738314,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 368,
+      "name": "EEP_LONG_TERM_NOISE_REDUCTION",
+      "table_offset": 736052,
+      "string_offset": 738346,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 369,
+      "name": "EEP_LONG_TERM_NOISE_REDUCTION_01",
+      "table_offset": 736060,
+      "string_offset": 738376,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 370,
+      "name": "EEP_AE_BRACKET",
+      "table_offset": 736068,
+      "string_offset": 738409,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 381,
+      "name": "EEP_DEPTH_BRACKET",
+      "table_offset": 736076,
+      "string_offset": 738424,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 371,
+      "name": "EEP_WB_BRACKET",
+      "table_offset": 736084,
+      "string_offset": 738442,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 372,
+      "name": "EEP_PWB_STANDARD",
+      "table_offset": 736092,
+      "string_offset": 738457,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 373,
+      "name": "EEP_PWB_VIVID",
+      "table_offset": 736100,
+      "string_offset": 738474,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 374,
+      "name": "EEP_PWB_PORTRAIT",
+      "table_offset": 736108,
+      "string_offset": 738488,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 375,
+      "name": "EEP_PWB_LANDSCAPE",
+      "table_offset": 736116,
+      "string_offset": 738505,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 376,
+      "name": "EEP_PWB_FOREST",
+      "table_offset": 736124,
+      "string_offset": 738523,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 377,
+      "name": "EEP_PWB_RETRO",
+      "table_offset": 736132,
+      "string_offset": 738538,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 378,
+      "name": "EEP_PWB_COOL",
+      "table_offset": 736140,
+      "string_offset": 738552,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 379,
+      "name": "EEP_PWB_CALM",
+      "table_offset": 736148,
+      "string_offset": 738565,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 380,
+      "name": "EEP_PWB_CLASSIC",
+      "table_offset": 736156,
+      "string_offset": 738578,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 381,
+      "name": "EEP_DEPTH_BRACKET",
+      "table_offset": 736164,
+      "string_offset": 738424,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 382,
+      "name": "EEP_DMF",
+      "table_offset": 736172,
+      "string_offset": 738594,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 383,
+      "name": "EEP_COLOR_SPACE",
+      "table_offset": 736180,
+      "string_offset": 738602,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 384,
+      "name": "EEP_DISTORTION_CORRECT",
+      "table_offset": 736188,
+      "string_offset": 738618,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 385,
+      "name": "EEP_TOUCH_OPERATION",
+      "table_offset": 736196,
+      "string_offset": 738641,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 386,
+      "name": "EEP_USER_DISPLAY_ICON",
+      "table_offset": 736204,
+      "string_offset": 738661,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 387,
+      "name": "EEP_USER_DISPLAY_DATE_TIME",
+      "table_offset": 736212,
+      "string_offset": 738683,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 388,
+      "name": "EEP_USER_DISPLAY_HISTOGRAM",
+      "table_offset": 736220,
+      "string_offset": 738710,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 389,
+      "name": "EEP_CUSTOM_KEY_MAPPING",
+      "table_offset": 736228,
+      "string_offset": 738737,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 390,
+      "name": "EEP_DIRECT_LINK_KEY_MAPPING",
+      "table_offset": 736236,
+      "string_offset": 738760,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 391,
+      "name": "EEP_GRID",
+      "table_offset": 736244,
+      "string_offset": 738788,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 392,
+      "name": "EEP_AF_LAMP",
+      "table_offset": 736252,
+      "string_offset": 738797,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 393,
+      "name": "EEP_SELF_SHOT",
+      "table_offset": 736260,
+      "string_offset": 738809,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 394,
+      "name": "EEP_DISTACTION_SOUND",
+      "table_offset": 736268,
+      "string_offset": 738823,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 395,
+      "name": "EEP_VOLUME",
+      "table_offset": 736276,
+      "string_offset": 738844,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 396,
+      "name": "EEP_AF_SOUND",
+      "table_offset": 736284,
+      "string_offset": 738855,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 397,
+      "name": "EEP_BUTTON_SOUND",
+      "table_offset": 736292,
+      "string_offset": 738868,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 398,
+      "name": "EEP_QUICK_VIEW",
+      "table_offset": 736300,
+      "string_offset": 738885,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 399,
+      "name": "EEP_BRIGHTNESS",
+      "table_offset": 736308,
+      "string_offset": 738900,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 400,
+      "name": "EEP_AUTO_BRIGHTNESS",
+      "table_offset": 736316,
+      "string_offset": 738915,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 401,
+      "name": "EEP_AUTO_DISP_OFF",
+      "table_offset": 736324,
+      "string_offset": 738935,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 402,
+      "name": "EEP_POWER_SAVE",
+      "table_offset": 736332,
+      "string_offset": 738953,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 403,
+      "name": "EEP_HELP_GUIDE_DISP",
+      "table_offset": 736340,
+      "string_offset": 738968,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 404,
+      "name": "EEP_LANGUAGE",
+      "table_offset": 736348,
+      "string_offset": 738988,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 405,
+      "name": "EEP_TIME_ZONE",
+      "table_offset": 736356,
+      "string_offset": 739001,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 406,
+      "name": "EEP_DATE_TYPE",
+      "table_offset": 736364,
+      "string_offset": 739015,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 407,
+      "name": "EEP_TIME_TYPE",
+      "table_offset": 736372,
+      "string_offset": 739029,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 408,
+      "name": "EEP_IMPRINT",
+      "table_offset": 736380,
+      "string_offset": 739043,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 409,
+      "name": "EEP_VIDEO_OUT",
+      "table_offset": 736388,
+      "string_offset": 739055,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 410,
+      "name": "EEP_ANYNET",
+      "table_offset": 736396,
+      "string_offset": 739069,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 411,
+      "name": "EEP_HDMI_OUTPUT",
+      "table_offset": 736404,
+      "string_offset": 739080,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 412,
+      "name": "EEP_FILE_NAME",
+      "table_offset": 736412,
+      "string_offset": 739096,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 413,
+      "name": "EEP_FILE_NUMBER",
+      "table_offset": 736420,
+      "string_offset": 739110,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 414,
+      "name": "EEP_FOLDER_TYPE",
+      "table_offset": 736428,
+      "string_offset": 739126,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 415,
+      "name": "EEP_DUAL_BAND_MOBILE_AP",
+      "table_offset": 736436,
+      "string_offset": 739142,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 416,
+      "name": "EEP_DISPLAY_COLOR",
+      "table_offset": 736444,
+      "string_offset": 739166,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 417,
+      "name": "EEP_BURST_FRAME",
+      "table_offset": 736452,
+      "string_offset": 739184,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 418,
+      "name": "EEP_PB_VIDEO_VOLUME",
+      "table_offset": 736460,
+      "string_offset": 739200,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 500,
+      "name": "EEP_WB_AUTO_DETAIL",
+      "table_offset": 736468,
+      "string_offset": 739220,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 501,
+      "name": "EEP_WB_DAYLIGHT_DETAIL",
+      "table_offset": 736476,
+      "string_offset": 739240,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 502,
+      "name": "EEP_WB_CLOUDY_DETAIL",
+      "table_offset": 736484,
+      "string_offset": 739264,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 503,
+      "name": "EEP_WB_FLU_W__DETAIL",
+      "table_offset": 736492,
+      "string_offset": 739286,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 504,
+      "name": "EEP_WB_FLU_N_DETAIL",
+      "table_offset": 736500,
+      "string_offset": 739308,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 505,
+      "name": "EEP_WB_FLU_D_DETAIL",
+      "table_offset": 736508,
+      "string_offset": 739329,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 506,
+      "name": "EEP_WB_TUNGSTEN_DETAIL",
+      "table_offset": 736516,
+      "string_offset": 739350,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 507,
+      "name": "EEP_WB_FLASH_DETAIL",
+      "table_offset": 736524,
+      "string_offset": 739374,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 509,
+      "name": "EEP_WB_FINE_ADJUST_DAYLIGHT",
+      "table_offset": 736532,
+      "string_offset": 739395,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 510,
+      "name": "EEP_WB_FINE_ADJUST_CLOUDY",
+      "table_offset": 736540,
+      "string_offset": 739424,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 511,
+      "name": "EEP_WB_FINE_ADJUST_FLUORESCENT_W",
+      "table_offset": 736548,
+      "string_offset": 739451,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 512,
+      "name": "EEP_WB_FINE_ADJUST_FLUORESCENT_N",
+      "table_offset": 736556,
+      "string_offset": 739485,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 513,
+      "name": "EEP_WB_FINE_ADJUST_FLUORESCENT_D",
+      "table_offset": 736564,
+      "string_offset": 739519,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 514,
+      "name": "EEP_WB_FINE_ADJUST_TUNGSTEN",
+      "table_offset": 736572,
+      "string_offset": 739553,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 515,
+      "name": "EEP_WB_FINE_ADJUST_FLASH",
+      "table_offset": 736580,
+      "string_offset": 739582,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 516,
+      "name": "EEP_WB_KALVIN",
+      "table_offset": 736588,
+      "string_offset": 739608,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 517,
+      "name": "EEP_PW_COLOR_OFF",
+      "table_offset": 736596,
+      "string_offset": 739623,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 518,
+      "name": "EEP_PW_COLOR_STANDARD",
+      "table_offset": 736604,
+      "string_offset": 739641,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 519,
+      "name": "EEP_PW_COLOR_VIVID",
+      "table_offset": 736612,
+      "string_offset": 739664,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 520,
+      "name": "EEP_PW_COLOR_PORTRAIT",
+      "table_offset": 736620,
+      "string_offset": 739684,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 521,
+      "name": "EEP_PW_COLOR_LANDSCAPE",
+      "table_offset": 736628,
+      "string_offset": 739707,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 522,
+      "name": "EEP_PW_COLOR_FOREST",
+      "table_offset": 736636,
+      "string_offset": 739731,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 523,
+      "name": "EEP_PW_COLOR_RETRO",
+      "table_offset": 736644,
+      "string_offset": 739752,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 524,
+      "name": "EEP_PW_COLOR_COOL",
+      "table_offset": 736652,
+      "string_offset": 739772,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 525,
+      "name": "EEP_PW_COLOR_CALM",
+      "table_offset": 736660,
+      "string_offset": 739791,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 526,
+      "name": "EEP_PW_COLOR_CLASSIC",
+      "table_offset": 736668,
+      "string_offset": 739810,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 527,
+      "name": "EEP_PW_COLOR_CUSTOM_1",
+      "table_offset": 736676,
+      "string_offset": 739832,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 528,
+      "name": "EEP_PW_COLOR_CUSTOM_2",
+      "table_offset": 736684,
+      "string_offset": 739855,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 529,
+      "name": "EEP_PW_COLOR_CUSTOM_3",
+      "table_offset": 736692,
+      "string_offset": 739878,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 530,
+      "name": "EEP_PW_SATURATION_OFF",
+      "table_offset": 736700,
+      "string_offset": 739901,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 531,
+      "name": "EEP_PW_SATURATION_STANDARD",
+      "table_offset": 736708,
+      "string_offset": 739924,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 532,
+      "name": "EEP_PW_SATURATION_VIVID",
+      "table_offset": 736716,
+      "string_offset": 739952,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 533,
+      "name": "EEP_PW_SATURATION_PORTRAIT",
+      "table_offset": 736724,
+      "string_offset": 739977,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 534,
+      "name": "EEP_PW_SATURATION_LANDSCAPE",
+      "table_offset": 736732,
+      "string_offset": 740005,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 535,
+      "name": "EEP_PW_SATURATION_FOREST",
+      "table_offset": 736740,
+      "string_offset": 740034,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 536,
+      "name": "EEP_PW_SATURATION_RETRO",
+      "table_offset": 736748,
+      "string_offset": 740060,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 537,
+      "name": "EEP_PW_SATURATION_COOL",
+      "table_offset": 736756,
+      "string_offset": 740085,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 538,
+      "name": "EEP_PW_SATURATION_CALM",
+      "table_offset": 736764,
+      "string_offset": 740109,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 539,
+      "name": "EEP_PW_SATURATION_CLASSIC",
+      "table_offset": 736772,
+      "string_offset": 740133,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 540,
+      "name": "EEP_PW_SATURATION_CUSTOM_1",
+      "table_offset": 736780,
+      "string_offset": 740160,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 541,
+      "name": "EEP_PW_SATURATION_CUSTOM_2",
+      "table_offset": 736788,
+      "string_offset": 740188,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 542,
+      "name": "EEP_PW_SATURATION_CUSTOM_3",
+      "table_offset": 736796,
+      "string_offset": 740216,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 543,
+      "name": "EEP_PW_SHARPNESS_OFF",
+      "table_offset": 736804,
+      "string_offset": 740244,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 544,
+      "name": "EEP_PW_SHARPNESS_STANDARD",
+      "table_offset": 736812,
+      "string_offset": 740266,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 545,
+      "name": "EEP_PW_SHARPNESS_VIVID",
+      "table_offset": 736820,
+      "string_offset": 740293,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 546,
+      "name": "EEP_PW_SHARPNESS_PORTRAIT",
+      "table_offset": 736828,
+      "string_offset": 740317,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 547,
+      "name": "EEP_PW_SHARPNESS_LANDSCAPE",
+      "table_offset": 736836,
+      "string_offset": 740344,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 548,
+      "name": "EEP_PW_SHARPNESS_FOREST",
+      "table_offset": 736844,
+      "string_offset": 740372,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 549,
+      "name": "EEP_PW_SHARPNESS_RETRO",
+      "table_offset": 736852,
+      "string_offset": 740397,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 550,
+      "name": "EEP_PW_SHARPNESS_COOL",
+      "table_offset": 736860,
+      "string_offset": 740421,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 551,
+      "name": "EEP_PW_SHARPNESS_CALM",
+      "table_offset": 736868,
+      "string_offset": 740444,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 552,
+      "name": "EEP_PW_SHARPNESS_CLASSIC",
+      "table_offset": 736876,
+      "string_offset": 740467,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 553,
+      "name": "EEP_PW_SHARPNESS_CUSTOM_1",
+      "table_offset": 736884,
+      "string_offset": 740493,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 554,
+      "name": "EEP_PW_SHARPNESS_CUSTOM_2",
+      "table_offset": 736892,
+      "string_offset": 740520,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 555,
+      "name": "EEP_PW_SHARPNESS_CUSTOM_3",
+      "table_offset": 736900,
+      "string_offset": 740547,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 556,
+      "name": "EEP_PW_CONTRAST_OFF",
+      "table_offset": 736908,
+      "string_offset": 740574,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 557,
+      "name": "EEP_PW_CONTRAST_STANDARD",
+      "table_offset": 736916,
+      "string_offset": 740595,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 558,
+      "name": "EEP_PW_CONTRAST_VIVID",
+      "table_offset": 736924,
+      "string_offset": 740621,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 559,
+      "name": "EEP_PW_CONTRAST_PORTRAIT",
+      "table_offset": 736932,
+      "string_offset": 740644,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 560,
+      "name": "EEP_PW_CONTRAST_LANDSCAPE",
+      "table_offset": 736940,
+      "string_offset": 740670,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 561,
+      "name": "EEP_PW_CONTRAST_FOREST",
+      "table_offset": 736948,
+      "string_offset": 740697,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 562,
+      "name": "EEP_PW_CONTRAST_RETRO",
+      "table_offset": 736956,
+      "string_offset": 740721,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 563,
+      "name": "EEP_PW_CONTRAST_COOL",
+      "table_offset": 736964,
+      "string_offset": 740744,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 564,
+      "name": "EEP_PW_CONTRAST_CALM",
+      "table_offset": 736972,
+      "string_offset": 740766,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 565,
+      "name": "EEP_PW_CONTRAST_CLASSIC",
+      "table_offset": 736980,
+      "string_offset": 740788,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 566,
+      "name": "EEP_PW_CONTRAST_CUSTOM_1",
+      "table_offset": 736988,
+      "string_offset": 740813,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 567,
+      "name": "EEP_PW_CONTRAST_CUSTOM_2",
+      "table_offset": 736996,
+      "string_offset": 740839,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 568,
+      "name": "EEP_PW_CONTRAST_CUSTOM_3",
+      "table_offset": 737004,
+      "string_offset": 740865,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 569,
+      "name": "EEP_DRIVE_BURST_FPS",
+      "table_offset": 737012,
+      "string_offset": 740891,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 570,
+      "name": "EEP_FLASH_FINE_ADJUST",
+      "table_offset": 737020,
+      "string_offset": 740911,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 571,
+      "name": "EEP_DATETIME_HOME_SUMMER_TIME",
+      "table_offset": 737028,
+      "string_offset": 740934,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 572,
+      "name": "EEP_DATETIME_VISIT_SUMMER_TIME",
+      "table_offset": 737036,
+      "string_offset": 740965,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 573,
+      "name": "EEP_DATETIME_DISPLAY",
+      "table_offset": 737044,
+      "string_offset": 740997,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 574,
+      "name": "EEP_BEEP_VOLUME",
+      "table_offset": 737052,
+      "string_offset": 741019,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 575,
+      "name": "EEP_APEX_APERTURE_TABLE_ADDR",
+      "table_offset": 737060,
+      "string_offset": 741035,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 579,
+      "name": "EEP_APEX_APERTURE_TABLE_LENGTH",
+      "table_offset": 737068,
+      "string_offset": 741065,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 580,
+      "name": "EEP_APEX_SHUTTER_SPEED_TABLE_ADDR",
+      "table_offset": 737076,
+      "string_offset": 741097,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 584,
+      "name": "EEP_APEX_SHUTTER_SPEED_TABLE_LENGTH",
+      "table_offset": 737084,
+      "string_offset": 741132,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 585,
+      "name": "EEP_SELECTION_AF_POS_X",
+      "table_offset": 737092,
+      "string_offset": 741169,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 589,
+      "name": "EEP_SELECTION_AF_POS_Y",
+      "table_offset": 737100,
+      "string_offset": 741192,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 593,
+      "name": "EEP_SELECTION_AF_POS_WIDTH",
+      "table_offset": 737108,
+      "string_offset": 741215,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 597,
+      "name": "EEP_SELECTION_AF_POS_HEIGHT",
+      "table_offset": 737116,
+      "string_offset": 741242,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 601,
+      "name": "EEP_PW_BRACKET_LAST_SAVED_MENU_ID",
+      "table_offset": 737124,
+      "string_offset": 741270,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    },
+    {
+      "id": 618,
+      "name": "EEP_LAST_SET_PW_OR_DR",
+      "table_offset": 737132,
+      "string_offset": 741304,
+      "section": 4,
+      "evidence": "static-id-and-name-pointer-pair",
+      "hardware_verified": false
+    }
+  ]
+}

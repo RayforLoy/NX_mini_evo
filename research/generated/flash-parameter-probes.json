@@ -1,0 +1,3640 @@
+{
+  "schema_version": 1,
+  "status": "bounded-native-arm-parameter-writes-with-modelled-inputs",
+  "original_firmware_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "decoded_section_1_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+  "hardware_verified": false,
+  "selfie_flash_fixed": false,
+  "whole_camera_emulated": false,
+  "flash_hardware_code_executed": false,
+  "unlisted_setting_values_modelled_as": 0,
+  "modelled_dependencies": [
+    "RAM object allocation",
+    "EEPROM settings",
+    "lens classification",
+    "camera state query",
+    "logging"
+  ],
+  "native_path": [
+    "0x40442af4",
+    "0x40347fe8",
+    "0x40695360",
+    "0x406c3ad0",
+    "0x4040afd8",
+    "0x40345b48"
+  ],
+  "stop_address": "0x406c3b98",
+  "writes": {
+    "iq_enum": "0x419f0538 + 0x11 (byte)",
+    "system_parameter": "modelled parameter buffer + 0x1a * 4 (u32)"
+  },
+  "constructor_chain": [
+    "startup call 0x40248ab4 -> 0x40267810",
+    "0x40267848: store main vtable 0x4076f5f0",
+    "0x40267854: store IQ table main+0x3a0+0x1f8 = 0x4076fb88",
+    "0x40248abc: store returned object through literal 0x40248c78"
+  ],
+  "binding_checks": {
+    "startup_global_literal_0x40248c78": {
+      "observed": "0x4098f1cc",
+      "matches": true
+    },
+    "impl_table_literal_0x40267a1c": {
+      "observed": "0x4076f5f0",
+      "matches": true
+    },
+    "derived_iq_slot_0xc8": {
+      "observed": "0x40695360",
+      "matches": true
+    },
+    "derived_main_slot_0xf8": {
+      "observed": "0x406c1c94",
+      "matches": true
+    },
+    "base_iq_state_literal_0x4040b41c": {
+      "observed": "0x419f0538",
+      "matches": true
+    },
+    "app_mode_setter_slot_0x94": {
+      "observed": "0x404410e4",
+      "matches": true
+    },
+    "derived_iq_scene_slot_0x98": {
+      "observed": "0x40695040",
+      "matches": true
+    }
+  },
+  "cases": [
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 0,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 1,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 2,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 2
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 3,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 2,
+      "system_parameter_0x1a": 2,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 4,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 3,
+      "system_parameter_0x1a": 3,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 5,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 5
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 6,
+      "system_parameter_0x1a": 4,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 6,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 6
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 7,
+      "system_parameter_0x1a": 5,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 7,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 7
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 8,
+      "system_parameter_0x1a": 6,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 0,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 1,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 2,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 2
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 3,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 2,
+      "system_parameter_0x1a": 2,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 4,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 3,
+      "system_parameter_0x1a": 3,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 5,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 5
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 6,
+      "system_parameter_0x1a": 4,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 6,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 6
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 7,
+      "system_parameter_0x1a": 5,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2003",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "351": 7,
+        "339": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 351,
+          "value": 7
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 349,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 313,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 302,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 339,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 315,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 8,
+      "system_parameter_0x1a": 6,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 0,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 1,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 2,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 2
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 3,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 2,
+      "system_parameter_0x1a": 2,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 4,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 3,
+      "system_parameter_0x1a": 3,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 5,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 5
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 6,
+      "system_parameter_0x1a": 4,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 6,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 6
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 7,
+      "system_parameter_0x1a": 5,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 0,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 7,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 7
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 8,
+      "system_parameter_0x1a": 6,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 0,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 1,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 2,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 2
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 1,
+      "system_parameter_0x1a": 1,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 3,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 2,
+      "system_parameter_0x1a": 2,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 4,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 3,
+      "system_parameter_0x1a": 3,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 5,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 5
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 6,
+      "system_parameter_0x1a": 4,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 6,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 6
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 7,
+      "system_parameter_0x1a": 5,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "mode": "0x2006",
+      "service_context_byte": 6,
+      "modelled_lens_type": 1,
+      "modelled_settings": {
+        "353": 7,
+        "345": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 7
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 8,
+      "system_parameter_0x1a": 6,
+      "flash_hardware_code_executed": false
+    }
+  ],
+  "existing_guard_cases": [
+    {
+      "guard": "drive-3",
+      "modelled_settings": {
+        "353": 4,
+        "345": 3
+      },
+      "modelled_inputs": {},
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 3
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "guard": "dynamic-range-2",
+      "modelled_settings": {
+        "353": 4,
+        "350": 2
+      },
+      "modelled_inputs": {},
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 2
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 1
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    },
+    {
+      "guard": "lens-class-0",
+      "modelled_settings": {
+        "353": 4
+      },
+      "modelled_inputs": {
+        "lens_type": 0
+      },
+      "result": null,
+      "stopped_at": "0x406c3b98",
+      "boundary": "flash-parameter-caches-written",
+      "dependencies": [
+        {
+          "kind": "modelled-setting-read",
+          "id": 353,
+          "value": 4
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 350,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 314,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 618,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 304,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 345,
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 316,
+          "value": 0
+        },
+        {
+          "kind": "modelled-camera-state-query",
+          "value": 0
+        },
+        {
+          "kind": "modelled-lens-type",
+          "value": 0
+        },
+        {
+          "kind": "modelled-setting-read",
+          "id": 570,
+          "value": 0
+        }
+      ],
+      "hardware_verified": false,
+      "whole_camera_emulated": false,
+      "iq_flash_enum": 0,
+      "system_parameter_0x1a": 0,
+      "flash_hardware_code_executed": false
+    }
+  ],
+  "ae_mode_mapping": {
+    "native_path": [
+      "0x404410e4",
+      "0x40695040",
+      "0x406c2bdc",
+      "0x40316ea8",
+      "0x4031390c",
+      "0x40316eb0"
+    ],
+    "stop_address": "0x40316eb4",
+    "cases": [
+      {
+        "mode": "0x2002",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 9,
+        "parameter_capture_mode": 0,
+        "parameter_smart_pro_mode": 4294967295,
+        "ae_mode": 21,
+        "setter_dependencies": [],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      },
+      {
+        "mode": "0x2003",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 0,
+        "parameter_capture_mode": 2,
+        "parameter_smart_pro_mode": 4294967295,
+        "ae_mode": 0,
+        "setter_dependencies": [],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      },
+      {
+        "mode": "0x2006",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 12,
+        "parameter_capture_mode": 1,
+        "parameter_smart_pro_mode": 35,
+        "ae_mode": 5,
+        "setter_dependencies": [],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      },
+      {
+        "mode": "0x200b",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 2,
+        "parameter_capture_mode": 3,
+        "parameter_smart_pro_mode": 4294967295,
+        "ae_mode": 1,
+        "setter_dependencies": [],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      },
+      {
+        "mode": "0x200c",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 3,
+        "parameter_capture_mode": 4,
+        "parameter_smart_pro_mode": 4294967295,
+        "ae_mode": 2,
+        "setter_dependencies": [],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      },
+      {
+        "mode": "0x200d",
+        "get_3d_mode_input": 0,
+        "camera_scene_enum": 4,
+        "parameter_capture_mode": 5,
+        "parameter_smart_pro_mode": 4294967295,
+        "ae_mode": 3,
+        "setter_dependencies": [
+          {
+            "kind": "modelled-setting-read",
+            "id": 887,
+            "value": 0
+          }
+        ],
+        "assignment": {
+          "result": null,
+          "stopped_at": "0x40316eb4",
+          "boundary": "native-ae-mode-field-written",
+          "dependencies": [],
+          "hardware_verified": false,
+          "whole_camera_emulated": false
+        },
+        "exposure_calculated": false,
+        "hardware_verified": false
+      }
+    ],
+    "separate_3d_input_control": {
+      "mode": "0x2006",
+      "get_3d_mode_input": 1,
+      "camera_scene_enum": 12,
+      "parameter_capture_mode": 1,
+      "parameter_smart_pro_mode": 35,
+      "ae_mode": 28,
+      "setter_dependencies": [],
+      "assignment": {
+        "result": null,
+        "stopped_at": "0x40316eb4",
+        "boundary": "native-ae-mode-field-written",
+        "dependencies": [],
+        "hardware_verified": false,
+        "whole_camera_emulated": false
+      },
+      "exposure_calculated": false,
+      "hardware_verified": false
+    },
+    "diagnostic_names": {
+      "0x80": "AEMode",
+      "parameter_0x47": "GetCaptureMode",
+      "parameter_0x72": "GetSmartProMode",
+      "parameter_0x51": "Get3DMode"
+    },
+    "other_input_fields_modelled_as": 0,
+    "exposure_calculated": false
+  },
+  "static_runtime_flash_trace": {
+    "evidence_kind": "static-disassembly-and-diagnostic-string-bindings",
+    "executed_in_this_probe": false,
+    "diagnostic": "0x401245b0 references iFlashEnable at 0x40124964",
+    "query_selector": "0x2c",
+    "query_path": [
+      "0x40342494",
+      "0x40336e90",
+      "0x40314fd8",
+      "0x403152c4",
+      "0x403137d8",
+      "0x40313834"
+    ],
+    "queried_field": "CAe output object returned by 0x4053b014, signed halfword +0x28",
+    "writer": "0x4053b364 copies program-line output byte +9 into that halfword",
+    "ordinary_selfshot_ae_5_policy": "0x4043f3b4 -> 0x4024ab3c -> 0x40249f34",
+    "separate_ae_0x1c_policy": "0x4024c640 explicitly clears output byte +9",
+    "caution": "This does not establish on-device runtime inputs or the physical flash veto. 0x40344160 is AdaptiveToneOn per diagnostic 0x403174f0, not flash availability."
+  },
+  "conclusion": "The original setter can write nonzero flash parameters in self-shot mode under these inputs. This does not prove physical flash operation or exclude a later capture-stage restriction."
+}

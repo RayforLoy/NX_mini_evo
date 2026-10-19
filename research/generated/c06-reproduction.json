@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "candidate": "C06",
+  "recorded_at_utc": "2026-10-19T09:42:49.231530+00:00",
+  "image": "dist/nxmini-evo-C06/manual-lens-C06_OFFLINE_ONLY.bin",
+  "rebuilt_image": "work/reproduce-C06-20261019.bin",
+  "byte_identical_rebuild": true,
+  "sha256": "d0780b10ecfec245e3ed77614b6e9779f915c2d2d25b7bb1bcab5cd2e3b7a1cd",
+  "bytes": 135010548,
+  "operations": 13,
+  "independent_verification": "research/generated/manual-lens-c06.json",
+  "manifest_sha256": "2b92a3540c0fd94a433bed5e7db842dc1d31efdb3c99ea82c8b4767599255b19",
+  "pytest_junit": "work/c06-all-test-results.xml",
+  "tests_passed": 173,
+  "arm_aligned_branch_scan": {
+    "range": "0x40509570..0x405095c3",
+    "original_external_direct_branches_found": 0,
+    "original_literal_words_into_range_found": 0,
+    "scope": "A32 aligned branch words and exact aligned literal words in original section 1; does not prove absence of all indirect or Thumb references"
+  },
+  "card_or_camera_written": false,
+  "hardware_verified": false,
+  "flash_ready": false,
+  "recovery_verified": false
+}

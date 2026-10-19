@@ -1,0 +1,20 @@
+{
+  "candidate": "C05",
+  "archive": "dist/nxmini-evo-C05-offline-candidate.zip",
+  "archive_sha256": "229bba1da55f1b6bcdbca42e7a19647daa67bfe980db5124e416bc648f8baaa8",
+  "archive_files_verified": 94,
+  "fresh_source_directory": "work/reproduce-C05",
+  "source_import_verified": true,
+  "reused_project_venv": true,
+  "fresh_dependency_install": false,
+  "official_original_copied_from_verified_local_file": true,
+  "rebuilt_matches_delivered_image": true,
+  "output_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+  "sections_verified": 7,
+  "resources_unchanged": 163,
+  "native_flash_profiles": 15,
+  "smart_auto_scene_pairs": 6,
+  "multi_node_mode_pairs": 12,
+  "hardware_verified": false,
+  "flash_ready": false
+}

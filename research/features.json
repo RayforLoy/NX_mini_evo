@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "firmware_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "flash_ready": false,
+  "features": [
+    {
+      "id": "firmware.candidate_C06",
+      "status": "verified-C06-file-prepared-on-card; physical-camera-update-and-selfshot-flash-retest-pending",
+      "manifest": "patches/manual-lens-c06.json",
+      "output_sha256": "d0780b10ecfec245e3ed77614b6e9779f915c2d2d25b7bb1bcab5cd2e3b7a1cd",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "camera_written": false,
+      "selfshot_flash_fixed": false,
+      "evidence": "research/generated/manual-lens-c06.json",
+      "candidate_copied_to_card": true,
+      "card_preparation": "research/generated/c06-card-preparation-20261019.json"
+    },
+    {
+      "id": "firmware.codec",
+      "status": "implemented-and-tested-offline"
+    },
+    {
+      "id": "firmware.checksums",
+      "status": "implemented-and-confirmed-by-static-code"
+    },
+    {
+      "id": "firmware.repack",
+      "status": "byte-identical-no-change-roundtrip-verified"
+    },
+    {
+      "id": "firmware.patch_engine",
+      "status": "tested-on-synthetic-and-official-input-offline"
+    },
+    {
+      "id": "manual_lens.no_contact_short",
+      "status": "C05-flashed-and-no-lens-photo-capture-reported-working-by-user; cold-start-repeat-and-exposure-matrix-incomplete",
+      "patch_available": true,
+      "manifest": "patches/manual-lens-c05.json",
+      "flash_ready": false,
+      "user_reported_capture_working": true,
+      "hardware_feedback": "research/generated/c05-hardware-feedback-20261019.json"
+    },
+    {
+      "id": "manual_lens.smart_auto",
+      "status": "C05-native-program-lines-keep-single-aperture-in-six-modelled-scenes-including-fixed-preset; physical-metering-exposure-not-verified",
+      "patch_available": true,
+      "complete_feature_fix": false
+    },
+    {
+      "id": "firmware.candidate_C05",
+      "status": "flashed-user-reported-partial-hardware-test; no-lens-capture-working; selfie-flash-menu-entry-still-hidden",
+      "manifest": "patches/manual-lens-c05.json",
+      "output_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "selfshot_flash_fixed": false,
+      "flashed_reported_by_user": true,
+      "hardware_feedback": "research/generated/c05-hardware-feedback-20261019.json"
+    },
+    {
+      "id": "firmware.candidate_C04",
+      "status": "full-image-generated-and-independently-decode-verified",
+      "manifest": "patches/manual-lens-c04.json",
+      "output_sha256": "a8e71a56bc55bfa9706a977457429945ae9125e05422770caeb75cb8fa957fa8",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "selfshot_flash_fixed": false
+    },
+    {
+      "id": "manual_lens.startup_notifications",
+      "status": "C05-native-callback-cache-and-deferred-events-verified-offline; readiness-and-queue-delivery-modelled; physical-cold-boot-not-tested",
+      "evidence": "research/generated/manual-lens-c05.json",
+      "complete_cold_boot_emulated": false,
+      "hardware_verified": false
+    },
+    {
+      "id": "firmware.candidate_C03",
+      "status": "full-image-generated-and-independently-decode-verified",
+      "manifest": "patches/manual-lens-c03.json",
+      "output_sha256": "dbbaf3fb9c5ebbb227b0dbc050797abe03a69b8f84001c9c114b3c532343387e",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "selfshot_flash_fixed": false
+    },
+    {
+      "id": "manual_lens.fallback_aperture_constraint",
+      "status": "C05-single-node-default-and-manual-AE-preset-compensation-verified-offline",
+      "evidence": "research/generated/manual-lens-c05.json",
+      "physical_aperture_known": false,
+      "complete_feature_fix": false
+    },
+    {
+      "id": "firmware.candidate_C02",
+      "status": "full-image-generated-and-independently-decode-verified",
+      "manifest": "patches/manual-lens-c02.json",
+      "output_sha256": "96301d75c5cf3d7e1218d2897665b8530caeceb6f3be0033f691cd46003908fd",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "selfshot_flash_fixed": false
+    },
+    {
+      "id": "firmware.candidate_C01",
+      "status": "full-image-generated-and-independently-decode-verified",
+      "manifest": "patches/manual-lens-c01.json",
+      "output_sha256": "70e65194c5130e365bcd110866532d4dc7954a50641867265263cea0d222a5f3",
+      "flash_ready": false,
+      "hardware_verified": false,
+      "selfshot_flash_fixed": false
+    },
+    {
+      "id": "selfshot.internal_flash",
+      "status": "C05-user-test-failed-original-9mm: absent-from-MENU-and-Fn; C06-adds-both-entries-and-Fn-values-with-native-guards-offline; hardware-retest-pending",
+      "evidence": "research/generated/manual-lens-c06.json",
+      "patch_available": true,
+      "manifest": "patches/manual-lens-c06.json",
+      "complete_feature_fix": false,
+      "hardware_verified": false,
+      "hardware_feedback": "research/generated/c05-hardware-feedback-20261019.json"
+    },
+    {
+      "id": "firmware.arm_function_probes",
+      "status": "original-ARM-settings-and-S2-event-routes-with-explicit-modelled-dependencies",
+      "whole_camera_emulated": false,
+      "hardware_verified": false
+    },
+    {
+      "id": "experiment.non_xm_flash_qualification",
+      "status": "single-instruction-image-built-and-independently-decode-verified",
+      "manifest": "experiments/non-xm-flash-qualification.json",
+      "output_sha256": "90eb8fdf1ff8ce8f9f312b73889b54e808cc06f882da759777ef69b2c7ab8997",
+      "complete_feature_fix": false,
+      "flash_ready": false
+    },
+    {
+      "id": "experimental_menu",
+      "status": "237-factory-commands-in-host-inventory",
+      "camera_implemented": false
+    },
+    {
+      "id": "pc_autobackup.receiver",
+      "status": "implemented-protocol-replay-tests-pass",
+      "camera_verified": false
+    },
+    {
+      "id": "synology.container",
+      "status": "configuration-delivered",
+      "deployment_verified": false
+    },
+    {
+      "id": "android.share_bridge",
+      "status": "apk-compiled-and-signature-verified",
+      "device_verified": false
+    },
+    {
+      "id": "mobilelink.direct",
+      "status": "requires-camera-protocol-capture",
+      "implemented": false
+    },
+    {
+      "id": "camera.ftp_http",
+      "status": "requires-code-execution-and-rtos-api-binding",
+      "implemented": false
+    },
+    {
+      "id": "camera.quick_share",
+      "status": "feasibility-investigation",
+      "implemented": false
+    },
+    {
+      "id": "styles.offline_reference",
+      "status": "four-original-approximation-profiles-and-cube-export-tested",
+      "brand_calibrated": false
+    },
+    {
+      "id": "styles.in_camera",
+      "status": "requires-isp-format-and-hook-verification",
+      "implemented": false
+    },
+    {
+      "id": "nx_m.protocol",
+      "status": "evidence-template-and-capture-tools",
+      "electrical_protocol_verified": false
+    }
+  ]
+}

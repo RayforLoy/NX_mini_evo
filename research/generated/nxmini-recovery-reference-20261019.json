@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "recorded_at_local": "2026-10-19T16:54:40.526871+08:00",
+  "model": "Samsung NX mini",
+  "source_type": "archived-manufacturer-service-manual-web-text",
+  "manual_pages_total": 65,
+  "chapter": "7-4 How to recover the MAIN PCB",
+  "source_urls": [
+    "https://www.manualslib.com/manual/3788063/Samsung-Nx-Mini.html?page=42",
+    "https://www.manualslib.com/manual/3788063/Samsung-Nx-Mini.html?page=43"
+  ],
+  "printed_pages": [
+    "7-6",
+    "7-7"
+  ],
+  "documented_recovery_route_found": true,
+  "route_summary": "Service procedure uses an official DATANXmini.bin on a memory card, camera disassembly, designated discharge points and temporary solder bridging of specified MAIN PCB test points; bridge removed after recovery.",
+  "small_card_recommendation": "less than 1GB; compatibility of current approximately 128GB card in this recovery mode is unverified",
+  "adjustment_data_preservation": "claimed by manual; not confirmed on this camera",
+  "figure_7_13_original_image_visually_verified": true,
+  "board_revision_matched": false,
+  "full_pdf_obtained": true,
+  "full_flash_backup_available": false,
+  "calibration_backup_available": false,
+  "recovery_executed_on_camera": false,
+  "recovery_verified": false,
+  "camera_write_performed": false,
+  "user_decision": "retain recovery prerequisite; no experimental write",
+  "next_evidence_needed": [
+    "matching camera board revision",
+    "recovery entry and firmware write coverage",
+    "camera-specific backup method and integrity",
+    "suitable small memory card and qualified physical service setup",
+    "successful documented recovery validation"
+  ],
+  "pdf": {
+    "source_url": "https://nxfiles.nx.tc/files/NXmini/Service-Manual/Samsung%20NX-Mini%20Digital%20Camera%20service%20manual.pdf",
+    "path": "D:\\NX mini evo\\references\\Samsung_NX_mini_Service_Manual.pdf",
+    "bytes": 19521732,
+    "sha256": "526e9bbcead7bf5cadfd503671029578506574599ef4c13951c0a9f8da99d6cc",
+    "pages": 65,
+    "recovery_pdf_pages": [
+      42,
+      43
+    ]
+  },
+  "pdf_pages_visually_checked": [
+    42,
+    43
+  ],
+  "discharge_and_recovery_tp_marked_separately": true,
+  "latest_user_instruction": "download the service manual into the project folder and begin flashing"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-17T19:37:56.712345+00:00",
+  "evidence_kind": "static-original-instruction-and-vtable-checks",
+  "source_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "decoded_section_1_sha256": "d5d5ac0bdd8e671578f6aca4a453fb12cbd6a88d1f173e4ce838c42c380c275b",
+  "candidate": "C05",
+  "candidate_sha256": "bf49164f24781ff61392e2d9afdd01a236554773f4c681de884f56272094f60e",
+  "candidate_binary_changed_this_review": false,
+  "checks": [
+    {
+      "address": "0x4076f630",
+      "bytes": "c4186c40",
+      "meaning": "Original derived-camera vtable slot 0x40 -> 0x406c18c4",
+      "verified": true
+    },
+    {
+      "address": "0x4076f634",
+      "bytes": "98196c40",
+      "meaning": "Original derived-camera vtable slot 0x44 -> 0x406c1998",
+      "verified": true
+    },
+    {
+      "address": "0x4076f638",
+      "bytes": "3c1a6c40",
+      "meaning": "Original derived-camera vtable slot 0x48 -> 0x406c1a3c",
+      "verified": true
+    },
+    {
+      "address": "0x4076f6e8",
+      "bytes": "941c6c40",
+      "meaning": "Original derived-camera vtable slot 0xf8 -> 0x406c1c94",
+      "verified": true
+    },
+    {
+      "address": "0x4014f984",
+      "bytes": "f81091e531ff2fe1",
+      "meaning": "Common photo dispatcher loads and invokes camera slot 0xf8",
+      "verified": true
+    },
+    {
+      "address": "0x4014f99c",
+      "bytes": "0100a0e3",
+      "meaning": "Common photo dispatcher returns 1 without propagating camera return value",
+      "verified": true
+    },
+    {
+      "address": "0x4022e390",
+      "bytes": "080094e5010280e3080084e5",
+      "meaning": "nolens production branch sets CORE+8 bit 0x10000000",
+      "verified": true
+    },
+    {
+      "address": "0x406c1ccc",
+      "bytes": "080090e5010210e30d00000a",
+      "meaning": "camPhotoCapture checks CORE+8 bit 0x10000000 before normal request",
+      "verified": true
+    },
+    {
+      "address": "0x406c1d0c",
+      "bytes": "b20100ea",
+      "meaning": "Production flag branch skips normal request to success return",
+      "verified": true
+    },
+    {
+      "address": "0x406c23dc",
+      "bytes": "0100a0e3",
+      "meaning": "camPhotoCapture success return",
+      "verified": true
+    },
+    {
+      "address": "0x406c1d10",
+      "bytes": "937bf4fa010610e30500000a",
+      "meaning": "Query pending operation state and test 0x100000",
+      "verified": true
+    },
+    {
+      "address": "0x406c1d2c",
+      "bytes": "0000a0e3",
+      "meaning": "Pending-operation rejection return 0",
+      "verified": true
+    },
+    {
+      "address": "0x406c2384",
+      "bytes": "0126a0e30610a0e10500a0e12dfeffeb",
+      "meaning": "Default branch submits 0x100000 through 0x406c1c4c",
+      "verified": true
+    },
+    {
+      "address": "0x406c1c78",
+      "bytes": "0600a0e1287bf4fb",
+      "meaning": "Request helper passes request to Thumb function 0x403e0926",
+      "verified": true
+    },
+    {
+      "address": "0x403e08fc",
+      "bytes": "07df",
+      "meaning": "Request state helper executes SVC 7",
+      "verified": true
+    },
+    {
+      "address": "0x403e0902",
+      "bytes": "8c600a7306df",
+      "meaning": "Request state helper writes request/state and executes SVC 6",
+      "verified": true
+    },
+    {
+      "address": "0x406c1b44",
+      "bytes": "021781e30c2082e3",
+      "meaning": "Conditional path sets CORE+4 bit 0x80000 and CORE+8 low bits",
+      "verified": true
+    },
+    {
+      "address": "0x406c1b5c",
+      "bytes": "0217c1e3",
+      "meaning": "Other path clears CORE+4 bit 0x80000",
+      "verified": true
+    },
+    {
+      "address": "0x4022e44c",
+      "bytes": "493a2f6e6f6c656e732e74787400",
+      "meaning": "Production trigger filename literal",
+      "verified": true
+    }
+  ],
+  "candidate_operations": 7,
+  "current_bundle": "dist/nxmini-evo-C05-offline-candidate-r2.zip",
+  "current_bundle_sha256": "40610917e24c6fdce3e959b26f923e8eed6c089833f1654ec5ce9cd8d2190ee3",
+  "bundle_crc_checked": true,
+  "bundle_entries": 97,
+  "existing_test_run": {
+    "tests": 159,
+    "new_tests_run": false,
+    "record": "research/validation.json"
+  },
+  "not_proven": [
+    "whole_common_photo_dispatch_execution",
+    "request_state_helper_execution",
+    "REALOS_scheduling",
+    "physical_capture",
+    "capture_completion_event_delivery",
+    "repeat_capture_readiness",
+    "complete_cold_boot",
+    "flash_trigger",
+    "hardware_backup_and_recovery"
+  ],
+  "new_firmware_patch_justified_by_this_static_review": false,
+  "hardware_verified": false,
+  "flash_ready": false
+}

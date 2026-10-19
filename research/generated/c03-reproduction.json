@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-17T18:28:46.214632+00:00",
+  "status": "C03-published-source-reproduced-in-fresh-directory",
+  "archive": "dist/nxmini-evo-C03-offline-candidate.zip",
+  "archive_sha256": "e3ab1ca6ef11a6e40272af3a583db53de796abae071307935abb0295cca6a7a9",
+  "archive_file_hashes_verified": 85,
+  "fresh_directory": "work/reproduce-C03",
+  "imported_source_is_fresh_bundle": true,
+  "python_dependency_environment_reused": true,
+  "clean_dependency_install_tested": false,
+  "official_original_sha256": "8a5bbe8885df239739f85f92087fea3972c05f98bd6521d809ed60dd5aca89fa",
+  "rebuilt_candidate_sha256": "dbbaf3fb9c5ebbb227b0dbc050797abe03a69b8f84001c9c114b3c532343387e",
+  "matches_bundled_image": true,
+  "sections_independently_verified": 7,
+  "resources_unchanged": 163,
+  "writer_unchanged": true,
+  "native_s2_cases": 24,
+  "native_aperture_profiles": 2,
+  "numeric_compensation_cases": 12,
+  "synthetic_table_load_and_detach_cycles": 2,
+  "commands": [
+    "python -m nxmini extract data/firmware/DATANXmini.bin work/nxmini-1.10-verified",
+    "python -m nxmini patch data/firmware/DATANXmini.bin patches/manual-lens-c03.json work/rebuilt-C03.bin",
+    "python tools/verify_candidate.py --candidate work/rebuilt-C03.bin --manifest patches/manual-lens-c03.json --output work/rebuilt-C03-verification.json"
+  ],
+  "hardware_verified": false,
+  "smart_auto_exposure_verified": false,
+  "recovery_verified": false,
+  "flash_ready": false,
+  "selfie_flash_fixed": false
+}
